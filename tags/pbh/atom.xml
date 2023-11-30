@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Axect&#x27;s Blog - PBH</title>
+    <subtitle>Axect&#x27;s Blog</subtitle>
+    <link href="https://axect.github.io/tags/pbh/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://axect.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2022-12-22T00:00:00+00:00</updated>
+    <id>https://axect.github.io/tags/pbh/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Axions from Primordial Black Hole</title>
+        <published>2022-12-22T00:00:00+00:00</published>
+        <updated>2022-12-22T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://axect.github.io/publications/pbh-alp-paper/" type="text/html"/>
+        <id>https://axect.github.io/publications/pbh-alp-paper/</id>
+        
+        <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First authors
+&lt;ul&gt;
+&lt;li&gt;Yongsoo Jho (Weizmann Institute, Israel)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&quot;&gt;&lt;strong&gt;Tae-Geun Kim&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;Yeji Park (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Corresponding authors
+&lt;ul&gt;
+&lt;li&gt;Jong-Chul Park (Chungnam National University, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;Seong Chan Park (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;&#x2F;h2&gt;
+&lt;p&gt;Primordial black holes (PBHs) can be significant sources of axions and axion-like particles (ALPs) in the Universe as the Hawking radiation of the PBH includes light particles when the Hawking temperature exceeds the particle&#x27;s mass. Once produced, as axions predominantly decay into photons, we may detect the enhanced photon spectrum using sensitive detectors. We introduce a new methodology by defining the time-varying decay process for particles to fly and decay over time on a cosmological scale. This paper provides the estimated photon spectrum and the flux under some simplified assumptions about PBH, 1) monochromatic mass spectrum and 2) isotropic distribution at cosmological scales. Future detectors, such as e-ASTROGAM, have great chances of detecting the signal.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;important-links&quot;&gt;Important links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2212.11977&quot;&gt;ArXiv: 2212.11977&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;citation&quot;&gt;Citation&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@article&lt;&#x2F;span&gt;&lt;span&gt;{Jho:2022wxd,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Jho, Yongsoo and Kim, Tae-Geun and Park, Jong-Chul and Park, Seong Chan and Park, Yeji&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;{Axions from Primordial Black Holes}&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;eprint &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;2212.11977&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;archivePrefix &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;arXiv&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;primaryClass &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;hep-ph&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;month &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;12&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;2022&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>

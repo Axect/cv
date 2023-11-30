@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Axect&#x27;s Blog - Statistics</title>
+    <subtitle>Axect&#x27;s Blog</subtitle>
+    <link href="https://axect.github.io/tags/statistics/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://axect.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-11-25T00:00:00+00:00</updated>
+    <id>https://axect.github.io/tags/statistics/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Peroxide</title>
+        <published>2023-11-25T00:00:00+00:00</published>
+        <updated>2023-11-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://axect.github.io/projects/peroxide/" type="text/html"/>
+        <id>https://axect.github.io/projects/peroxide/</id>
+        
+        <content type="html">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;peroxide&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;crates&#x2F;v&#x2F;peroxide.svg&quot; alt=&quot;On crates.io&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;peroxide.surge.sh&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;peroxide&#x2F;badge.svg&quot; alt=&quot;On docs.rs&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml?&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml.svg&quot; alt=&quot;builds.sr.ht status&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide&#x2F;workflows&#x2F;Github&#x2F;badge.svg&quot; alt=&quot;github&quot; &#x2F;&gt; 
+&lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;badge&#x2F;maintenance-actively--developed-brightgreen.svg&quot; alt=&quot;maintenance&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Rust numeric library contains linear algebra, numerical analysis, statistics and machine learning tools with R, MATLAB, Python like macros.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;why-peroxide&quot;&gt;Why Peroxide?&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;1-customize-features&quot;&gt;1. Customize features&lt;&#x2F;h3&gt;
+&lt;p&gt;Peroxide provides various features.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;default&lt;&#x2F;code&gt; - Pure Rust (No dependencies of architecture - Perfect cross compilation)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;O3&lt;&#x2F;code&gt; - BLAS &amp;amp; LAPACK (Perfect performance but little bit hard to set-up - Strongly recommend to look &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide_BLAS&quot;&gt;Peroxide with BLAS&lt;&#x2F;a&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;plot&lt;&#x2F;code&gt; - With matplotlib of python, we can draw any plots.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;nc&lt;&#x2F;code&gt; - To handle netcdf file format with DataFrame&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;csv&lt;&#x2F;code&gt; - To handle csv file format with Matrix or DataFrame&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;parquet&lt;&#x2F;code&gt; - To handle parquet file format with DataFrame&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;serde&lt;&#x2F;code&gt; - serialization with &lt;a href=&quot;https:&#x2F;&#x2F;serde.rs&#x2F;&quot;&gt;Serde&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;If you want to do high performance computation and more linear algebra, then choose &lt;code&gt;O3&lt;&#x2F;code&gt; feature.
+If you don&#x27;t want to depend C&#x2F;C++ or Fortran libraries, then choose &lt;code&gt;default&lt;&#x2F;code&gt; feature.
+If you want to draw plot with some great templates, then choose &lt;code&gt;plot&lt;&#x2F;code&gt; feature.&lt;&#x2F;p&gt;
+&lt;p&gt;You can choose any features simultaneously.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;2-easy-to-optimize&quot;&gt;2. Easy to optimize&lt;&#x2F;h3&gt;
+&lt;p&gt;Peroxide uses 1D data structure to describe matrix. So, it&#x27;s too easy to integrate BLAS.
+It means peroxide guarantees perfect performance for linear algebraic computations.&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;3-friendly-syntax&quot;&gt;3. Friendly syntax&lt;&#x2F;h3&gt;
+&lt;p&gt;Rust is so strange for Numpy, MATLAB, R users. Thus, it&#x27;s harder to learn the more rusty libraries.
+With peroxide, you can do heavy computations with R, Numpy, MATLAB like syntax.&lt;&#x2F;p&gt;
+&lt;p&gt;For example,&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;macro_use&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;extern crate&lt;&#x2F;span&gt;&lt;span&gt; peroxide;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span&gt;peroxide::prelude::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; MATLAB like matrix constructor
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; a &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;ml_matrix&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;1 2;3 4&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; R like matrix constructor (default)
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; b &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;matrix&lt;&#x2F;span&gt;&lt;span&gt;(c!(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;4&lt;&#x2F;span&gt;&lt;span&gt;), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, Row);
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; Or use zeros
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span&gt; z &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;zeros&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    z[(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;)] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1.0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    z[(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;)] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2.0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    z[(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span&gt;)] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;3.0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    z[(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;,&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;)] &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;4.0&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; Simple but effective operations
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; c &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; a &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt; b; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; Matrix multiplication (BLAS integrated)
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; Easy to pretty print
+&lt;&#x2F;span&gt;&lt;span&gt;    c.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F;       c[0] c[1]
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; r[0]     1    3
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; r[1]     2    4
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; Easy to do linear algebra
+&lt;&#x2F;span&gt;&lt;span&gt;    c.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;det&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;    c.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;inv&lt;&#x2F;span&gt;&lt;span&gt;().&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;print&lt;&#x2F;span&gt;&lt;span&gt;();
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; and etc.
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;4-can-choose-two-different-coding-styles&quot;&gt;4. Can choose two different coding styles.&lt;&#x2F;h3&gt;
+&lt;p&gt;In peroxide, there are two different options.&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;prelude&lt;&#x2F;code&gt;: To simple use.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;fuga&lt;&#x2F;code&gt;: To choose numerical algorithms explicitly.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;For examples, let&#x27;s see norm.&lt;&#x2F;p&gt;
+&lt;p&gt;In &lt;code&gt;prelude&lt;&#x2F;code&gt;, use &lt;code&gt;norm&lt;&#x2F;code&gt; is simple: &lt;code&gt;a.norm()&lt;&#x2F;code&gt;. But it only uses L2 norm for &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt;. (For &lt;code&gt;Matrix&lt;&#x2F;code&gt;, Frobenius norm.)&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;macro_use&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;extern crate&lt;&#x2F;span&gt;&lt;span&gt; peroxide;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span&gt;peroxide::prelude::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; a &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;c!(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; l2 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; a.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;norm&lt;&#x2F;span&gt;&lt;span&gt;();      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;&#x2F;&#x2F; L2 is default vector norm
+&lt;&#x2F;span&gt;&lt;span&gt;    
+&lt;&#x2F;span&gt;&lt;span&gt;    assert_eq!(l2, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;14&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;f64&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;sqrt&lt;&#x2F;span&gt;&lt;span&gt;());
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;In &lt;code&gt;fuga&lt;&#x2F;code&gt;, use various norms. But you should write longer than &lt;code&gt;prelude&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;rust&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-rust &quot;&gt;&lt;code class=&quot;language-rust&quot; data-lang=&quot;rust&quot;&gt;&lt;span&gt;#[&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;macro_use&lt;&#x2F;span&gt;&lt;span&gt;]
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;extern crate&lt;&#x2F;span&gt;&lt;span&gt; peroxide;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;use &lt;&#x2F;span&gt;&lt;span&gt;peroxide::fuga::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;*&lt;&#x2F;span&gt;&lt;span&gt;;
+&lt;&#x2F;span&gt;&lt;span&gt;   
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;main&lt;&#x2F;span&gt;&lt;span&gt;() {
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; a &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;= &lt;&#x2F;span&gt;&lt;span&gt;c!(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;1&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;2&lt;&#x2F;span&gt;&lt;span&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; l1 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; a.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;norm&lt;&#x2F;span&gt;&lt;span&gt;(Norm::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;L1&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; l2 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; a.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;norm&lt;&#x2F;span&gt;&lt;span&gt;(Norm::&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;L2&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span&gt; l_inf &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt; a.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;norm&lt;&#x2F;span&gt;&lt;span&gt;(Norm::LInf);
+&lt;&#x2F;span&gt;&lt;span&gt;    assert_eq!(l1, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;6&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;f64&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;    assert_eq!(l2, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;14&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;f64&lt;&#x2F;span&gt;&lt;span&gt;.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;sqrt&lt;&#x2F;span&gt;&lt;span&gt;());
+&lt;&#x2F;span&gt;&lt;span&gt;    assert_eq!(l_inf, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c18401;&quot;&gt;3&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;f64&lt;&#x2F;span&gt;&lt;span&gt;);
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;5-batteries-included&quot;&gt;5. Batteries included&lt;&#x2F;h3&gt;
+&lt;p&gt;Peroxide can do many things. &lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Linear Algebra
+&lt;ul&gt;
+&lt;li&gt;Effective Matrix structure&lt;&#x2F;li&gt;
+&lt;li&gt;Transpose, Determinant, Diagonal&lt;&#x2F;li&gt;
+&lt;li&gt;LU Decomposition, Inverse matrix, Block partitioning&lt;&#x2F;li&gt;
+&lt;li&gt;QR Decomposition (&lt;code&gt;O3&lt;&#x2F;code&gt; feature)&lt;&#x2F;li&gt;
+&lt;li&gt;Singular Value Decomposition (SVD) (&lt;code&gt;O3&lt;&#x2F;code&gt; feature)&lt;&#x2F;li&gt;
+&lt;li&gt;Cholesky Decomposition (&lt;code&gt;O3&lt;&#x2F;code&gt; feature)&lt;&#x2F;li&gt;
+&lt;li&gt;Reduced Row Echelon form&lt;&#x2F;li&gt;
+&lt;li&gt;Column, Row operations&lt;&#x2F;li&gt;
+&lt;li&gt;Eigenvalue, Eigenvector&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Functional Programming
+&lt;ul&gt;
+&lt;li&gt;More easy functional programming with &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;For matrix, there are three maps
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fmap&lt;&#x2F;code&gt; : map for all elements&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;col_map&lt;&#x2F;code&gt; : map for column vectors&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;row_map&lt;&#x2F;code&gt; : map for row vectors&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Automatic Differentiation
+&lt;ul&gt;
+&lt;li&gt;Taylor mode Forward AD - for nth order AD&lt;&#x2F;li&gt;
+&lt;li&gt;Exact jacobian&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;code&gt;Real&lt;&#x2F;code&gt; trait to constrain for &lt;code&gt;f64&lt;&#x2F;code&gt; and &lt;code&gt;AD&lt;&#x2F;code&gt; (for ODE)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Numerical Analysis
+&lt;ul&gt;
+&lt;li&gt;Lagrange interpolation&lt;&#x2F;li&gt;
+&lt;li&gt;Splines
+&lt;ul&gt;
+&lt;li&gt;Cubic Spline&lt;&#x2F;li&gt;
+&lt;li&gt;Cubic Hermite Spline
+&lt;ul&gt;
+&lt;li&gt;Estimate slope via Akima&lt;&#x2F;li&gt;
+&lt;li&gt;Estimate slope via Quadratic interpolation&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Non-linear regression
+&lt;ul&gt;
+&lt;li&gt;Gradient Descent&lt;&#x2F;li&gt;
+&lt;li&gt;Levenberg Marquardt&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Ordinary Differential Equation
+&lt;ul&gt;
+&lt;li&gt;Euler&lt;&#x2F;li&gt;
+&lt;li&gt;Runge Kutta 4th order&lt;&#x2F;li&gt;
+&lt;li&gt;Backward Euler (Implicit)&lt;&#x2F;li&gt;
+&lt;li&gt;Gauss Legendre 4th order (Implicit)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Numerical Integration
+&lt;ul&gt;
+&lt;li&gt;Newton-Cotes Quadrature&lt;&#x2F;li&gt;
+&lt;li&gt;Gauss-Legendre Quadrature (up to 30 order)&lt;&#x2F;li&gt;
+&lt;li&gt;Gauss-Kronrod Quadrature (Adaptive)
+&lt;ul&gt;
+&lt;li&gt;G7K15, G10K21, G15K31, G20K41, G25K51, G30K61&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Root Finding
+&lt;ul&gt;
+&lt;li&gt;Bisection&lt;&#x2F;li&gt;
+&lt;li&gt;False Position (Regula Falsi)&lt;&#x2F;li&gt;
+&lt;li&gt;Secant&lt;&#x2F;li&gt;
+&lt;li&gt;Newton&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Statistics
+&lt;ul&gt;
+&lt;li&gt;More easy random with &lt;code&gt;rand&lt;&#x2F;code&gt; crate&lt;&#x2F;li&gt;
+&lt;li&gt;Ordered Statistics
+&lt;ul&gt;
+&lt;li&gt;Median&lt;&#x2F;li&gt;
+&lt;li&gt;Quantile (Matched with R quantile)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Probability Distributions
+&lt;ul&gt;
+&lt;li&gt;Bernoulli&lt;&#x2F;li&gt;
+&lt;li&gt;Uniform&lt;&#x2F;li&gt;
+&lt;li&gt;Binomial&lt;&#x2F;li&gt;
+&lt;li&gt;Normal&lt;&#x2F;li&gt;
+&lt;li&gt;Gamma&lt;&#x2F;li&gt;
+&lt;li&gt;Beta&lt;&#x2F;li&gt;
+&lt;li&gt;Student&#x27;s-t&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;RNG algorithms
+&lt;ul&gt;
+&lt;li&gt;Acceptance Rejection&lt;&#x2F;li&gt;
+&lt;li&gt;Marsaglia Polar&lt;&#x2F;li&gt;
+&lt;li&gt;Ziggurat&lt;&#x2F;li&gt;
+&lt;li&gt;Wrapper for &lt;code&gt;rand-dist&lt;&#x2F;code&gt; crate&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Confusion Matrix &amp;amp; Metrics&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Special functions
+&lt;ul&gt;
+&lt;li&gt;Wrapper for &lt;code&gt;puruspe&lt;&#x2F;code&gt; crate (pure rust)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Utils
+&lt;ul&gt;
+&lt;li&gt;R-like macro &amp;amp; functions&lt;&#x2F;li&gt;
+&lt;li&gt;Matlab-like macro &amp;amp; functions&lt;&#x2F;li&gt;
+&lt;li&gt;Numpy-like macro &amp;amp; functions&lt;&#x2F;li&gt;
+&lt;li&gt;Julia-like macro &amp;amp; functions&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Plotting
+&lt;ul&gt;
+&lt;li&gt;With &lt;code&gt;pyo3&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;matplotlib&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;DataFrame
+&lt;ul&gt;
+&lt;li&gt;Support various types simultaneously&lt;&#x2F;li&gt;
+&lt;li&gt;Read &amp;amp; Write &lt;code&gt;csv&lt;&#x2F;code&gt; files (&lt;code&gt;csv&lt;&#x2F;code&gt; feature)&lt;&#x2F;li&gt;
+&lt;li&gt;Read &amp;amp; Write &lt;code&gt;netcdf&lt;&#x2F;code&gt; files (&lt;code&gt;nc&lt;&#x2F;code&gt; feature)&lt;&#x2F;li&gt;
+&lt;li&gt;Read &amp;amp; Write &lt;code&gt;parquet&lt;&#x2F;code&gt; files (&lt;code&gt;parquet&lt;&#x2F;code&gt; feature)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;6-compatible-with-mathematics&quot;&gt;6. Compatible with Mathematics&lt;&#x2F;h3&gt;
+&lt;p&gt;After &lt;code&gt;0.23.0&lt;&#x2F;code&gt;, peroxide is compatible with mathematical structures.
+&lt;code&gt;Matrix&lt;&#x2F;code&gt;, &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt;, &lt;code&gt;f64&lt;&#x2F;code&gt; are considered as inner product vector spaces.
+And &lt;code&gt;Matrix&lt;&#x2F;code&gt;, &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; are linear operators - &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; to &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; and &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; to &lt;code&gt;f64&lt;&#x2F;code&gt;.
+For future, peroxide will include more &amp;amp; more mathematical concepts. (But still practical.)&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;7-written-in-rust&quot;&gt;7. Written in Rust&lt;&#x2F;h3&gt;
+&lt;p&gt;Rust &amp;amp; Cargo are awesome for scientific computations. 
+You can use any external packages easily with Cargo, not make.
+And default runtime performance of Rust is also great. If you use many iterations for computations,
+then Rust become great choice.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;latest-readme-version&quot;&gt;Latest README version&lt;&#x2F;h2&gt;
+&lt;p&gt;Corresponding to &lt;code&gt;0.32.0&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;pre-requisite&quot;&gt;Pre-requisite&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;For &lt;code&gt;O3&lt;&#x2F;code&gt; feature - Need &lt;code&gt;OpenBLAS&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;For &lt;code&gt;plot&lt;&#x2F;code&gt; feature - Need &lt;code&gt;matplotlib&lt;&#x2F;code&gt; of python&lt;&#x2F;li&gt;
+&lt;li&gt;For &lt;code&gt;nc&lt;&#x2F;code&gt; feature - Need &lt;code&gt;netcdf&lt;&#x2F;code&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;install&quot;&gt;Install&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Run below commands in your project directory&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;ol&gt;
+&lt;li&gt;Default&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; add peroxide
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;OpenBLAS&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; add peroxide&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --features&lt;&#x2F;span&gt;&lt;span&gt; O3
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Plot&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; add peroxide&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --features&lt;&#x2F;span&gt;&lt;span&gt; plot
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;NetCDF dependency for DataFrame&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; add peroxide&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --features&lt;&#x2F;span&gt;&lt;span&gt; nc
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;CSV dependency for DataFrame&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; add peroxide&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --features&lt;&#x2F;span&gt;&lt;span&gt; csv
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Parquet dependency for DataFrame&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; add peroxide&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --features&lt;&#x2F;span&gt;&lt;span&gt; parquet
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;All features&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;cargo&lt;&#x2F;span&gt;&lt;span&gt; add peroxide&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; --features &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;O3 plot nc csv parquet&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;useful-tips-for-features&quot;&gt;Useful tips for features&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;If you want to use &lt;em&gt;QR&lt;&#x2F;em&gt; or &lt;em&gt;SVD&lt;&#x2F;em&gt; or &lt;em&gt;Cholesky Decomposition&lt;&#x2F;em&gt; then should use &lt;code&gt;O3&lt;&#x2F;code&gt; feature (there are no implementations for these decompositions in &lt;code&gt;default&lt;&#x2F;code&gt;)&lt;&#x2F;li&gt;
+&lt;li&gt;If you want to write your numerical results, then use &lt;code&gt;parquet&lt;&#x2F;code&gt; or &lt;code&gt;nc&lt;&#x2F;code&gt; features (corresponding to &lt;code&gt;parquet&lt;&#x2F;code&gt; or &lt;code&gt;netcdf&lt;&#x2F;code&gt; format. (It is much more effective than &lt;code&gt;csv&lt;&#x2F;code&gt; and &lt;code&gt;json&lt;&#x2F;code&gt;.)&lt;&#x2F;li&gt;
+&lt;li&gt;To plot, use &lt;code&gt;parquet&lt;&#x2F;code&gt; or &lt;code&gt;nc&lt;&#x2F;code&gt; feature to export data as parquet or netcdf format and use python to draw plot.
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;plot&lt;&#x2F;code&gt; feature has limited plot abilities.&lt;&#x2F;li&gt;
+&lt;li&gt;To read parquet file in python, use &lt;code&gt;pandas&lt;&#x2F;code&gt; &amp;amp; &lt;code&gt;pyarrow&lt;&#x2F;code&gt; libraries.&lt;&#x2F;li&gt;
+&lt;li&gt;There is a template of python code for netcdf. - &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Socialst&#x2F;blob&#x2F;master&#x2F;Templates&#x2F;PyPlot_Template&#x2F;nc_plot.py&quot;&gt;Socialst&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;documentation&quot;&gt;Documentation&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;peroxide.surge.sh&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;peroxide&#x2F;badge.svg&quot; alt=&quot;On docs.rs&quot; &#x2F;&gt;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;example&quot;&gt;Example&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide_Gallery&quot;&gt;Peroxide Gallery&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;version-info&quot;&gt;Version Info&lt;&#x2F;h2&gt;
+&lt;p&gt;To see &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide&#x2F;blob&#x2F;master&#x2F;RELEASES.md&quot;&gt;RELEASES.md&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>

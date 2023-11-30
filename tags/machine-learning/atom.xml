@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>Axect&#x27;s Blog - Machine Learning</title>
+    <subtitle>Axect&#x27;s Blog</subtitle>
+    <link href="https://axect.github.io/tags/machine-learning/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://axect.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-11-17T00:00:00+00:00</updated>
+    <id>https://axect.github.io/tags/machine-learning/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Forger</title>
+        <published>2023-11-17T00:00:00+00:00</published>
+        <updated>2023-11-17T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://axect.github.io/projects/forger/" type="text/html"/>
+        <id>https://axect.github.io/projects/forger/</id>
+        
+        <content type="html"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>DeeLeMa</title>
+        <published>2023-11-10T00:00:00+00:00</published>
+        <updated>2023-11-10T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://axect.github.io/projects/deelema/" type="text/html"/>
+        <id>https://axect.github.io/projects/deelema/</id>
+        
+        <content type="html">&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
+&lt;p&gt;$\textsf{DeeLeMa}$ is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, $\textsf{DeeLeMa}$&#x27;s generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, $\textsf{DeeLeMa}$&#x27;s effectiveness shines when corresponding kinematic symmetries are adopted.&lt;&#x2F;p&gt;
+&lt;p&gt;The current version of $\textsf{DeeLeMa}$ (v1.0.0) is constructed on the $t\bar{t}$-like antler event topology which is shown below figure.&lt;&#x2F;p&gt;
+&lt;p align=&quot;center&quot;&gt;
+&lt;img src=&quot;https:&#x2F;&#x2F;github.com&#x2F;Yonsei-HEP-COSMO&#x2F;DeeLeMa&#x2F;blob&#x2F;main&#x2F;img&#x2F;topology.png?raw=true&quot; width=&quot;350&quot;&gt;
+    &lt;br&gt;
+    &lt;m&gt;$t\bar{t}$-like antler event topology&lt;&#x2F;m&gt;
+&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;requirements&quot;&gt;Requirements&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;using-pip&quot;&gt;Using Pip&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;pip3&lt;&#x2F;span&gt;&lt;span&gt; install&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; -r&lt;&#x2F;span&gt;&lt;span&gt; requirements.txt
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;using-pdm-recommended&quot;&gt;Using PDM (Recommended)&lt;&#x2F;h3&gt;
+&lt;p&gt;If you haven&#x27;t installed &lt;code&gt;pdm&lt;&#x2F;code&gt; yet:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# Linux &#x2F; Mac
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;curl -sSL&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;pdm.fming.dev&#x2F;install-pdm.py &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;python3&lt;&#x2F;span&gt;&lt;span&gt; -
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# Windows
+&lt;&#x2F;span&gt;&lt;span&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;Invoke-WebRequest -Uri&lt;&#x2F;span&gt;&lt;span&gt; https:&#x2F;&#x2F;pdm.fming.dev&#x2F;install-pdm.py&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt; -UseBasicParsing&lt;&#x2F;span&gt;&lt;span&gt;).Content &lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;| &lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;python&lt;&#x2F;span&gt;&lt;span&gt; -
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;With PDM installed:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# Install dependencies from pyproject.toml
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;pdm&lt;&#x2F;span&gt;&lt;span&gt; install
+&lt;&#x2F;span&gt;&lt;span&gt;
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a0a1a7;&quot;&gt;# Activate virtual environment (venv)
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#0184bc;&quot;&gt;source&lt;&#x2F;span&gt;&lt;span&gt; .venv&#x2F;bin&#x2F;activate
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;getting-started&quot;&gt;Getting Started&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Clone the Repository&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;git&lt;&#x2F;span&gt;&lt;span&gt; clone https:&#x2F;&#x2F;github.com&#x2F;Yonsei-HEP-COSMO&#x2F;DeeLeMa.git
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Install Dependencies&lt;&#x2F;strong&gt;: &lt;&#x2F;p&gt;
+&lt;p&gt;Follow the &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x2F;projects&#x2F;deelema&#x2F;#requirements&quot;&gt;Requirements&lt;&#x2F;a&gt; section for instructions.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Training&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;Caution&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;Before training, ensure you modify the data path in &lt;code&gt;train.py&lt;&#x2F;code&gt; to point to the location of your data.
+For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x2F;projects&#x2F;deelema&#x2F;.&#x2F;train.py&quot;&gt;&lt;code&gt;train.py&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;p&gt;To train the model, execute the following command:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;python&lt;&#x2F;span&gt;&lt;span&gt; train.py
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Monitoring&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
+&lt;p&gt;To monitor the training process, run &lt;code&gt;tensorboard&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;tensorboard --logdir&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;=&lt;&#x2F;span&gt;&lt;span&gt;logs&#x2F;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;⚠️ &lt;strong&gt;Caution&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;If you use PDM then should run tensorboard in activated virtual environment.&lt;&#x2F;p&gt;
+&lt;&#x2F;blockquote&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;h2 id=&quot;citation&quot;&gt;Citation&lt;&#x2F;h2&gt;
+&lt;p&gt;If $\textsf{DeeLeMa}$ benefits your research, please acknowledge our efforts by citing the following paper:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bibtex&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bibtex &quot;&gt;&lt;code class=&quot;language-bibtex&quot; data-lang=&quot;bibtex&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@article&lt;&#x2F;span&gt;&lt;span&gt;{Ban:2022hfk,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Ban, Kayoung and Kang, Dong Woo and Kim, Tae-Geun and Park, Seong Chan and Park, Yeji&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;{DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation}&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;eprint &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;2212.12836&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;archivePrefix &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;arXiv&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;primaryClass &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;hep-ph&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;month &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;12&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;2022&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;reference&quot;&gt;Reference&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;K. Ban, D. W. Kang, T.-G Kim, S. C. Park, and Y. Park,  &lt;em&gt;DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation&lt;&#x2F;em&gt;, &lt;a href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2212.12836&quot;&gt;arXiv:2212.12836&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;license&quot;&gt;License&lt;&#x2F;h2&gt;
+&lt;p&gt;$\textsf{DeeLeMa}$ is released under the MIT License. For more details, see the &lt;code&gt;LICENSE&lt;&#x2F;code&gt; file in the repository.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Radient</title>
+        <published>2023-11-09T00:00:00+00:00</published>
+        <updated>2023-11-09T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://axect.github.io/projects/radient/" type="text/html"/>
+        <id>https://axect.github.io/projects/radient/</id>
+        
+        <content type="html"></content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Unsupervised seq2seq learning for automatic SQA introduces multi-channel EIT monitoring</title>
+        <published>2023-05-16T00:00:00+00:00</published>
+        <updated>2023-05-16T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://axect.github.io/publications/eit-anomaly-paper/" type="text/html"/>
+        <id>https://axect.github.io/publications/eit-anomaly-paper/</id>
+        
+        <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First authors
+&lt;ul&gt;
+&lt;li&gt;Chang Min Hyun (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&quot;&gt;&lt;strong&gt;Tae-Geun Kim&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Corresponding authors
+&lt;ul&gt;
+&lt;li&gt;Chang Min Hyun (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;Kyunghhun Lee (Kyung Hee University, South Korea)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;&#x2F;h2&gt;
+&lt;p&gt;This study proposes an unsupervised sequence-to-sequence learning approach that automatically assesses the motion-induced reliability degradation of the cardiac volume signal (CVS) in multi-channel electrical impedance-based hemodynamic monitoring. The proposed method attempts to tackle shortcomings in existing learning-based assessment approaches, such as the requirement of manual annotation for motion influence and the lack of explicit mechanisms for realizing motion-induced abnormalities under contextual variations in CVS over time. By utilizing long-short term memory and variational auto-encoder structures, an encoder--decoder model is trained not only to self-reproduce an input sequence of the CVS but also to extrapolate the future in a parallel fashion. By doing so, the model can capture contextual knowledge lying in a temporal CVS sequence while being regularized to explore a general relationship over the entire time-series. A motion-influenced CVS of low-quality is detected, based on the residual between the input sequence and its neural representation with a cut--off value determined from the two-sigma rule of thumb over the training set. Our experimental observations validated two claims: (i) in the learning environment of label-absence, assessment performance is achievable at a competitive level to the supervised setting, and (ii) the contextual information across a time series of CVS is advantageous for effectively realizing motion-induced unrealistic distortions in signal amplitude and morphology. We also investigated the capability as a pseudo-labeling tool to minimize human-craft annotation by preemptively providing strong candidates for motion-induced anomalies. Empirical evidence has shown that machine-guided annotation can reduce inevitable human-errors during manual assessment while minimizing cumbersome and time-consuming processes.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;important-links&quot;&gt;Important links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2305.09368&quot;&gt;ArXiv: 2305.09368&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;citation&quot;&gt;Citation&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@misc&lt;&#x2F;span&gt;&lt;span&gt;{hyun2023unsupervised,
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Unsupervised sequence-to-sequence learning for automatic signal quality assessment in multi-channel electrical impedance-based hemodynamic monitoring}&lt;&#x2F;span&gt;&lt;span&gt;, 
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Chang Min Hyun and Tae-Geun Kim and Kyounghun Lee}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2023}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;eprint&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2305.09368}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;archivePrefix&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{arXiv}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;primaryClass&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{eess.SP}
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Missing information search with deep learning for mass estimation</title>
+        <published>2022-12-25T00:00:00+00:00</published>
+        <updated>2022-12-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://axect.github.io/publications/deelema-paper/" type="text/html"/>
+        <id>https://axect.github.io/publications/deelema-paper/</id>
+        
+        <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;First authors
+&lt;ul&gt;
+&lt;li&gt;Kayoung Ban (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;Dongwoo Kang (KIAS, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&quot;&gt;&lt;strong&gt;Tae-Geun Kim&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;li&gt;Yeji Park (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;Corresponding author
+&lt;ul&gt;
+&lt;li&gt;Seong Chan Park (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;&#x2F;h2&gt;
+&lt;p&gt;We introduce DeeLeMa, a deep learning-based network for the analysis of energy and momentum in high-energy particle collisions. This novel approach is specifically designed to address the challenge of analyzing collision events with multiple invisible particles, which are prevalent in many high-energy physics experiments. DeeLeMa is constructed based on the kinematic constraints and symmetry of the event topologies. We show that DeeLeMa can robustly estimate mass distribution even in the presence of combinatorial uncertainties and detector smearing effects. The approach is flexible and can be applied to various event topologies by leveraging the relevant kinematic symmetries. This work opens up exciting opportunities for the analysis of high-energy particle collision data, and we believe that DeeLeMa has the potential to become a valuable tool for the high-energy physics community.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;important-links&quot;&gt;Important links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;journals.aps.org&#x2F;prresearch&#x2F;abstract&#x2F;10.1103&#x2F;PhysRevResearch.5.043186&quot;&gt;PRR: &lt;strong&gt;5&lt;&#x2F;strong&gt;, 043186&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2212.12836&quot;&gt;ArXiv: 2212.12836&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Yonsei-HEPCOSMO&#x2F;DeeLeMa&quot;&gt;GitHub&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;citation&quot;&gt;Citation&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@article&lt;&#x2F;span&gt;&lt;span&gt;{Ban:2023mjy,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Ban, Kayoung and Kang, Dong Woo and Kim, Tae-Geun and Park, Seong Chan and Park, Yeji&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;{Missing information search with deep learning for mass estimation}&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;doi &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;10.1103&#x2F;PhysRevResearch.5.043186&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;journal &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;Phys. Rev. Res.&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;volume &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;5&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;number &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;4&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;pages &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;043186&amp;quot;&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;&amp;quot;2023&amp;quot;
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+</feed>

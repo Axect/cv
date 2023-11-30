@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <title>Axect&#x27;s Blog</title>
+  
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-extra-condensed@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/open-sans@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" href="https://axect.github.io/main.css">
+
+  
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+
+
+  
+  
+<!-- RSS -->
+
+<link rel="alternate" type="application/atom+xml" title="RSS" href="https://axect.github.io/atom.xml">
+
+
+  
+
+  
+  
+</head>
+
+<body>
+  <aside id="sidebar" class="menu is-hidden-touch">
+    
+
+<div style="display:block;margin:auto auto 0;padding:.5rem">
+    <figure class="image">
+        <img id="avatar" class="is-rounded" src="https://axect.github.io/media/axect_profile.png">
+    </figure>
+</div>
+
+
+    
+<ul id="menu" class="menu-list">
+    
+
+<li data-menuanchor="about"><a href="https://axect.github.io/#anchor_about">ABOUT</a></li>   
+
+ 
+<li data-menuanchor="skills"><a href="https://axect.github.io/#anchor_skills">SKILLS</a></li>
+
+
+<li data-menuanchor="projects"><a href="https://axect.github.io/#anchor_projects">PROJECTS</a></li>
+
+
+
+<li data-menuanchor="publications"><a href="https://axect.github.io/#anchor_publications">PUBLICATIONS</a></li>
+
+
+ 
+<li data-menuanchor="education"><a href="https://axect.github.io/#anchor_education">EDUCATION</a></li>
+
+ 
+<li data-menuanchor="blog"><a href="https://axect.github.io/#anchor_blog">BLOG</a></li>    
+
+</ul>
+
+  </aside>
+  
+<div class="modal" id="copyTarget">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <section class="modal-card-body">
+      <textarea class="textarea" id="bibtex-content" placeholder="e.g. Hello world"  readonly></textarea>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" id="copyButton">Copy to clipboard</button>
+    </footer>
+  </div>
+</div>
+
+  <div id="content">
+    <!-- Content -->
+    
+<div class="container is-fluid" style="min-height: 100vh;">
+  <div class="is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh;">
+    <h2>DeeLeMa<a href="https:&#x2F;&#x2F;github.com&#x2F;Yonsei-HEPCOSMO&#x2F;DeeLeMa" style="font-style: initial;" ><span class="tag is-warning">Link</span></a></h2>
+    
+    <div class="content pb-5">
+      <h2 id="overview">Overview</h2>
+<p>$\textsf{DeeLeMa}$ is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, $\textsf{DeeLeMa}$'s generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, $\textsf{DeeLeMa}$'s effectiveness shines when corresponding kinematic symmetries are adopted.</p>
+<p>The current version of $\textsf{DeeLeMa}$ (v1.0.0) is constructed on the $t\bar{t}$-like antler event topology which is shown below figure.</p>
+<p align="center">
+<img src="https://github.com/Yonsei-HEP-COSMO/DeeLeMa/blob/main/img/topology.png?raw=true" width="350">
+    <br>
+    <m>$t\bar{t}$-like antler event topology</m>
+</p>
+<h2 id="requirements">Requirements</h2>
+<h3 id="using-pip">Using Pip</h3>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">pip3</span><span> install</span><span style="color:#e45649;"> -r</span><span> requirements.txt
+</span></code></pre>
+<h3 id="using-pdm-recommended">Using PDM (Recommended)</h3>
+<p>If you haven't installed <code>pdm</code> yet:</p>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#a0a1a7;"># Linux / Mac
+</span><span style="color:#e45649;">curl -sSL</span><span> https://pdm.fming.dev/install-pdm.py </span><span style="color:#a626a4;">| </span><span style="color:#e45649;">python3</span><span> -
+</span><span>
+</span><span style="color:#a0a1a7;"># Windows
+</span><span>(</span><span style="color:#e45649;">Invoke-WebRequest -Uri</span><span> https://pdm.fming.dev/install-pdm.py</span><span style="color:#e45649;"> -UseBasicParsing</span><span>).Content </span><span style="color:#a626a4;">| </span><span style="color:#e45649;">python</span><span> -
+</span></code></pre>
+<p>With PDM installed:</p>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#a0a1a7;"># Install dependencies from pyproject.toml
+</span><span style="color:#e45649;">pdm</span><span> install
+</span><span>
+</span><span style="color:#a0a1a7;"># Activate virtual environment (venv)
+</span><span style="color:#0184bc;">source</span><span> .venv/bin/activate
+</span></code></pre>
+<h2 id="getting-started">Getting Started</h2>
+<ol>
+<li>
+<p><strong>Clone the Repository</strong></p>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">git</span><span> clone https://github.com/Yonsei-HEP-COSMO/DeeLeMa.git
+</span></code></pre>
+</li>
+<li>
+<p><strong>Install Dependencies</strong>: </p>
+<p>Follow the <a href="https://axect.github.io/projects/deelema/#requirements">Requirements</a> section for instructions.</p>
+</li>
+<li>
+<p><strong>Training</strong>:</p>
+<p>⚠️ <strong>Caution</strong></p>
+<blockquote>
+<p>Before training, ensure you modify the data path in <code>train.py</code> to point to the location of your data.
+For more details, refer to <a href="https://axect.github.io/projects/deelema/./train.py"><code>train.py</code></a>.</p>
+</blockquote>
+<p>To train the model, execute the following command:</p>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">python</span><span> train.py
+</span></code></pre>
+</li>
+<li>
+<p><strong>Monitoring</strong>:</p>
+<p>To monitor the training process, run <code>tensorboard</code>:</p>
+<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">tensorboard --logdir</span><span style="color:#a626a4;">=</span><span>logs/
+</span></code></pre>
+<p>⚠️ <strong>Caution</strong></p>
+<blockquote>
+<p>If you use PDM then should run tensorboard in activated virtual environment.</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="citation">Citation</h2>
+<p>If $\textsf{DeeLeMa}$ benefits your research, please acknowledge our efforts by citing the following paper:</p>
+<pre data-lang="bibtex" style="background-color:#fafafa;color:#383a42;" class="language-bibtex "><code class="language-bibtex" data-lang="bibtex"><span style="color:#a626a4;">@article</span><span>{Ban:2022hfk,
+</span><span>    </span><span style="color:#50a14f;">author </span><span>= </span><span style="color:#50a14f;">&quot;Ban, Kayoung and Kang, Dong Woo and Kim, Tae-Geun and Park, Seong Chan and Park, Yeji&quot;</span><span>,
+</span><span>    </span><span style="color:#50a14f;">title </span><span>= </span><span style="color:#50a14f;">&quot;{DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation}&quot;</span><span>,
+</span><span>    </span><span style="color:#50a14f;">eprint </span><span>= </span><span style="color:#50a14f;">&quot;2212.12836&quot;</span><span>,
+</span><span>    </span><span style="color:#50a14f;">archivePrefix </span><span>= </span><span style="color:#50a14f;">&quot;arXiv&quot;</span><span>,
+</span><span>    </span><span style="color:#50a14f;">primaryClass </span><span>= </span><span style="color:#50a14f;">&quot;hep-ph&quot;</span><span>,
+</span><span>    </span><span style="color:#50a14f;">month </span><span>= </span><span style="color:#50a14f;">&quot;12&quot;</span><span>,
+</span><span>    </span><span style="color:#50a14f;">year </span><span>= </span><span style="color:#50a14f;">&quot;2022&quot;
+</span><span>}
+</span></code></pre>
+<h2 id="reference">Reference</h2>
+<ul>
+<li>K. Ban, D. W. Kang, T.-G Kim, S. C. Park, and Y. Park,  <em>DeeLeMa: Missing Information Search with Deep Learning for Mass Estimation</em>, <a href="https://arxiv.org/abs/2212.12836">arXiv:2212.12836</a></li>
+</ul>
+<h2 id="license">License</h2>
+<p>$\textsf{DeeLeMa}$ is released under the MIT License. For more details, see the <code>LICENSE</code> file in the repository.</p>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+<script>
+  function show_bib(bib_path) {
+    $.ajax({
+      url: bib_path,
+      success: function (data) {
+        $("#bibtex-content").text(data);
+        $("#copyTarget").addClass("is-active");
+      },
+    });
+  }
+
+  document
+    .getElementById("copyButton")
+    .addEventListener("click", function () {
+      var copyText = document.getElementById("bibtex-content");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+      $("#copyTarget").removeClass("is-active");
+    });
+</script>
+
+  
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/dist/fullpage.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var fullpages = new fullpage('#fullpage', {
+        menu: '#menu',
+        setRecordHistory: false,
+        anchors: [
+             'anchor_about',         
+             'anchor_skills',        
+             'anchor_projects',      
+            
+             'anchor_publications',  
+            
+             'anchor_education',     
+             'anchor_blog',          
+        ],
+        afterResize: function( width, height ){
+		    if (width < 936) {
+                fullpage_api.setAutoScrolling(false);
+            } else {
+                fullpage_api.setAutoScrolling(true);
+            }
+	    }
+    });
+    if (screen.width < 936){
+        fullpages.setAutoScrolling(false);
+    }
+
+</script>
+
+</body>
+
+</html>

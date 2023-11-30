@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, viewport-fit=cover">
+  <title>Axect&#x27;s Blog</title>
+  
+<!-- CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/saira-extra-condensed@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/open-sans@4.5.0/index.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.4/css/all.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" integrity="sha384-n8MVd4RsNIU0tAv4ct0nTaAbDJwPJzDEaqSD1odI+WdtXRGWt2kTvGFasHpSy3SV" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+<link rel="stylesheet" href="https://axect.github.io/main.css">
+
+  
+<!-- JS -->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" integrity="sha384-XjKyOOlGwcjNTAIQHIpgOno0Hl1YQqzUOEleOLALmuqehneUG+vnGctmUb0ZY0l8" crossorigin="anonymous"></script>
+
+
+
+
+  
+  
+<!-- RSS -->
+
+<link rel="alternate" type="application/atom+xml" title="RSS" href="https://axect.github.io/atom.xml">
+
+
+  
+
+  
+  
+</head>
+
+<body>
+  <aside id="sidebar" class="menu is-hidden-touch">
+    
+
+<div style="display:block;margin:auto auto 0;padding:.5rem">
+    <figure class="image">
+        <img id="avatar" class="is-rounded" src="https://axect.github.io/media/axect_profile.png">
+    </figure>
+</div>
+
+
+    
+<ul id="menu" class="menu-list">
+    
+
+<li data-menuanchor="about"><a href="https://axect.github.io/#anchor_about">ABOUT</a></li>   
+
+ 
+<li data-menuanchor="skills"><a href="https://axect.github.io/#anchor_skills">SKILLS</a></li>
+
+
+<li data-menuanchor="projects"><a href="https://axect.github.io/#anchor_projects">PROJECTS</a></li>
+
+
+
+<li data-menuanchor="publications"><a href="https://axect.github.io/#anchor_publications">PUBLICATIONS</a></li>
+
+
+ 
+<li data-menuanchor="education"><a href="https://axect.github.io/#anchor_education">EDUCATION</a></li>
+
+ 
+<li data-menuanchor="blog"><a href="https://axect.github.io/#anchor_blog">BLOG</a></li>    
+
+</ul>
+
+  </aside>
+  
+<div class="modal" id="copyTarget">
+  <div class="modal-background"></div>
+  <div class="modal-card">
+    <section class="modal-card-body">
+      <textarea class="textarea" id="bibtex-content" placeholder="e.g. Hello world"  readonly></textarea>
+    </section>
+    <footer class="modal-card-foot">
+      <button class="button" id="copyButton">Copy to clipboard</button>
+    </footer>
+  </div>
+</div>
+
+  <div id="content">
+    <!-- Content -->
+    
+<div class="container is-fluid" style="min-height: 100vh;">
+  <div class="is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh;">
+    <h2>Peroxide<a href="https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide" style="font-style: initial;" ><span class="tag is-warning">Link</span></a></h2>
+    
+    <div class="content pb-5">
+      <p><a href="https://crates.io/crates/peroxide"><img src="https://img.shields.io/crates/v/peroxide.svg" alt="On crates.io" /></a>
+<a href="https://peroxide.surge.sh"><img src="https://docs.rs/peroxide/badge.svg" alt="On docs.rs" /></a>
+<a href="https://builds.sr.ht/~axect/Peroxide/.build.yml?"><img src="https://builds.sr.ht/~axect/Peroxide/.build.yml.svg" alt="builds.sr.ht status" /></a>
+<img src="https://github.com/Axect/Peroxide/workflows/Github/badge.svg" alt="github" /> 
+<img src="https://img.shields.io/badge/maintenance-actively--developed-brightgreen.svg" alt="maintenance" /></p>
+<p>Rust numeric library contains linear algebra, numerical analysis, statistics and machine learning tools with R, MATLAB, Python like macros.</p>
+<h2 id="why-peroxide">Why Peroxide?</h2>
+<h3 id="1-customize-features">1. Customize features</h3>
+<p>Peroxide provides various features.</p>
+<ul>
+<li><code>default</code> - Pure Rust (No dependencies of architecture - Perfect cross compilation)</li>
+<li><code>O3</code> - BLAS &amp; LAPACK (Perfect performance but little bit hard to set-up - Strongly recommend to look <a href="https://github.com/Axect/Peroxide_BLAS">Peroxide with BLAS</a>)</li>
+<li><code>plot</code> - With matplotlib of python, we can draw any plots.</li>
+<li><code>nc</code> - To handle netcdf file format with DataFrame</li>
+<li><code>csv</code> - To handle csv file format with Matrix or DataFrame</li>
+<li><code>parquet</code> - To handle parquet file format with DataFrame</li>
+<li><code>serde</code> - serialization with <a href="https://serde.rs/">Serde</a>.</li>
+</ul>
+<p>If you want to do high performance computation and more linear algebra, then choose <code>O3</code> feature.
+If you don't want to depend C/C++ or Fortran libraries, then choose <code>default</code> feature.
+If you want to draw plot with some great templates, then choose <code>plot</code> feature.</p>
+<p>You can choose any features simultaneously.</p>
+<h3 id="2-easy-to-optimize">2. Easy to optimize</h3>
+<p>Peroxide uses 1D data structure to describe matrix. So, it's too easy to integrate BLAS.
+It means peroxide guarantees perfect performance for linear algebraic computations.</p>
+<h3 id="3-friendly-syntax">3. Friendly syntax</h3>
+<p>Rust is so strange for Numpy, MATLAB, R users. Thus, it's harder to learn the more rusty libraries.
+With peroxide, you can do heavy computations with R, Numpy, MATLAB like syntax.</p>
+<p>For example,</p>
+<pre data-lang="rust" style="background-color:#fafafa;color:#383a42;" class="language-rust "><code class="language-rust" data-lang="rust"><span>#[</span><span style="color:#e45649;">macro_use</span><span>]
+</span><span style="color:#a626a4;">extern crate</span><span> peroxide;
+</span><span style="color:#a626a4;">use </span><span>peroxide::prelude::</span><span style="color:#a626a4;">*</span><span>;
+</span><span>
+</span><span style="color:#a626a4;">fn </span><span style="color:#0184bc;">main</span><span>() {
+</span><span>    </span><span style="color:#a0a1a7;">// MATLAB like matrix constructor
+</span><span>    </span><span style="color:#a626a4;">let</span><span> a </span><span style="color:#a626a4;">= </span><span style="color:#0184bc;">ml_matrix</span><span>(</span><span style="color:#50a14f;">&quot;1 2;3 4&quot;</span><span>);
+</span><span>
+</span><span>    </span><span style="color:#a0a1a7;">// R like matrix constructor (default)
+</span><span>    </span><span style="color:#a626a4;">let</span><span> b </span><span style="color:#a626a4;">= </span><span style="color:#0184bc;">matrix</span><span>(c!(</span><span style="color:#c18401;">1</span><span>,</span><span style="color:#c18401;">2</span><span>,</span><span style="color:#c18401;">3</span><span>,</span><span style="color:#c18401;">4</span><span>), </span><span style="color:#c18401;">2</span><span>, </span><span style="color:#c18401;">2</span><span>, Row);
+</span><span>
+</span><span>    </span><span style="color:#a0a1a7;">// Or use zeros
+</span><span>    </span><span style="color:#a626a4;">let mut</span><span> z </span><span style="color:#a626a4;">= </span><span style="color:#0184bc;">zeros</span><span>(</span><span style="color:#c18401;">2</span><span>, </span><span style="color:#c18401;">2</span><span>);
+</span><span>    z[(</span><span style="color:#c18401;">0</span><span>,</span><span style="color:#c18401;">0</span><span>)] </span><span style="color:#a626a4;">= </span><span style="color:#c18401;">1.0</span><span>;
+</span><span>    z[(</span><span style="color:#c18401;">0</span><span>,</span><span style="color:#c18401;">1</span><span>)] </span><span style="color:#a626a4;">= </span><span style="color:#c18401;">2.0</span><span>;
+</span><span>    z[(</span><span style="color:#c18401;">1</span><span>,</span><span style="color:#c18401;">0</span><span>)] </span><span style="color:#a626a4;">= </span><span style="color:#c18401;">3.0</span><span>;
+</span><span>    z[(</span><span style="color:#c18401;">1</span><span>,</span><span style="color:#c18401;">1</span><span>)] </span><span style="color:#a626a4;">= </span><span style="color:#c18401;">4.0</span><span>;
+</span><span>    
+</span><span>    </span><span style="color:#a0a1a7;">// Simple but effective operations
+</span><span>    </span><span style="color:#a626a4;">let</span><span> c </span><span style="color:#a626a4;">=</span><span> a </span><span style="color:#a626a4;">*</span><span> b; </span><span style="color:#a0a1a7;">// Matrix multiplication (BLAS integrated)
+</span><span>
+</span><span>    </span><span style="color:#a0a1a7;">// Easy to pretty print
+</span><span>    c.</span><span style="color:#0184bc;">print</span><span>();
+</span><span>    </span><span style="color:#a0a1a7;">//       c[0] c[1]
+</span><span>    </span><span style="color:#a0a1a7;">// r[0]     1    3
+</span><span>    </span><span style="color:#a0a1a7;">// r[1]     2    4
+</span><span>
+</span><span>    </span><span style="color:#a0a1a7;">// Easy to do linear algebra
+</span><span>    c.</span><span style="color:#0184bc;">det</span><span>().</span><span style="color:#0184bc;">print</span><span>();
+</span><span>    c.</span><span style="color:#0184bc;">inv</span><span>().</span><span style="color:#0184bc;">print</span><span>();
+</span><span>
+</span><span>    </span><span style="color:#a0a1a7;">// and etc.
+</span><span>}
+</span></code></pre>
+<h3 id="4-can-choose-two-different-coding-styles">4. Can choose two different coding styles.</h3>
+<p>In peroxide, there are two different options.</p>
+<ul>
+<li><code>prelude</code>: To simple use.</li>
+<li><code>fuga</code>: To choose numerical algorithms explicitly.</li>
+</ul>
+<p>For examples, let's see norm.</p>
+<p>In <code>prelude</code>, use <code>norm</code> is simple: <code>a.norm()</code>. But it only uses L2 norm for <code>Vec&lt;f64&gt;</code>. (For <code>Matrix</code>, Frobenius norm.)</p>
+<pre data-lang="rust" style="background-color:#fafafa;color:#383a42;" class="language-rust "><code class="language-rust" data-lang="rust"><span>#[</span><span style="color:#e45649;">macro_use</span><span>]
+</span><span style="color:#a626a4;">extern crate</span><span> peroxide;
+</span><span style="color:#a626a4;">use </span><span>peroxide::prelude::</span><span style="color:#a626a4;">*</span><span>;
+</span><span>
+</span><span style="color:#a626a4;">fn </span><span style="color:#0184bc;">main</span><span>() {
+</span><span>    </span><span style="color:#a626a4;">let</span><span> a </span><span style="color:#a626a4;">= </span><span>c!(</span><span style="color:#c18401;">1</span><span>, </span><span style="color:#c18401;">2</span><span>, </span><span style="color:#c18401;">3</span><span>);
+</span><span>    </span><span style="color:#a626a4;">let</span><span> l2 </span><span style="color:#a626a4;">=</span><span> a.</span><span style="color:#0184bc;">norm</span><span>();      </span><span style="color:#a0a1a7;">// L2 is default vector norm
+</span><span>    
+</span><span>    assert_eq!(l2, </span><span style="color:#c18401;">14</span><span style="color:#a626a4;">f64</span><span>.</span><span style="color:#0184bc;">sqrt</span><span>());
+</span><span>}
+</span></code></pre>
+<p>In <code>fuga</code>, use various norms. But you should write longer than <code>prelude</code>.</p>
+<pre data-lang="rust" style="background-color:#fafafa;color:#383a42;" class="language-rust "><code class="language-rust" data-lang="rust"><span>#[</span><span style="color:#e45649;">macro_use</span><span>]
+</span><span style="color:#a626a4;">extern crate</span><span> peroxide;
+</span><span style="color:#a626a4;">use </span><span>peroxide::fuga::</span><span style="color:#a626a4;">*</span><span>;
+</span><span>   
+</span><span style="color:#a626a4;">fn </span><span style="color:#0184bc;">main</span><span>() {
+</span><span>    </span><span style="color:#a626a4;">let</span><span> a </span><span style="color:#a626a4;">= </span><span>c!(</span><span style="color:#c18401;">1</span><span>, </span><span style="color:#c18401;">2</span><span>, </span><span style="color:#c18401;">3</span><span>);
+</span><span>    </span><span style="color:#a626a4;">let</span><span> l1 </span><span style="color:#a626a4;">=</span><span> a.</span><span style="color:#0184bc;">norm</span><span>(Norm::</span><span style="color:#c18401;">L1</span><span>);
+</span><span>    </span><span style="color:#a626a4;">let</span><span> l2 </span><span style="color:#a626a4;">=</span><span> a.</span><span style="color:#0184bc;">norm</span><span>(Norm::</span><span style="color:#c18401;">L2</span><span>);
+</span><span>    </span><span style="color:#a626a4;">let</span><span> l_inf </span><span style="color:#a626a4;">=</span><span> a.</span><span style="color:#0184bc;">norm</span><span>(Norm::LInf);
+</span><span>    assert_eq!(l1, </span><span style="color:#c18401;">6</span><span style="color:#a626a4;">f64</span><span>);
+</span><span>    assert_eq!(l2, </span><span style="color:#c18401;">14</span><span style="color:#a626a4;">f64</span><span>.</span><span style="color:#0184bc;">sqrt</span><span>());
+</span><span>    assert_eq!(l_inf, </span><span style="color:#c18401;">3</span><span style="color:#a626a4;">f64</span><span>);
+</span><span>}
+</span></code></pre>
+<h3 id="5-batteries-included">5. Batteries included</h3>
+<p>Peroxide can do many things. </p>
+<ul>
+<li>Linear Algebra
+<ul>
+<li>Effective Matrix structure</li>
+<li>Transpose, Determinant, Diagonal</li>
+<li>LU Decomposition, Inverse matrix, Block partitioning</li>
+<li>QR Decomposition (<code>O3</code> feature)</li>
+<li>Singular Value Decomposition (SVD) (<code>O3</code> feature)</li>
+<li>Cholesky Decomposition (<code>O3</code> feature)</li>
+<li>Reduced Row Echelon form</li>
+<li>Column, Row operations</li>
+<li>Eigenvalue, Eigenvector</li>
+</ul>
+</li>
+<li>Functional Programming
+<ul>
+<li>More easy functional programming with <code>Vec&lt;f64&gt;</code></li>
+<li>For matrix, there are three maps
+<ul>
+<li><code>fmap</code> : map for all elements</li>
+<li><code>col_map</code> : map for column vectors</li>
+<li><code>row_map</code> : map for row vectors</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Automatic Differentiation
+<ul>
+<li>Taylor mode Forward AD - for nth order AD</li>
+<li>Exact jacobian</li>
+<li><code>Real</code> trait to constrain for <code>f64</code> and <code>AD</code> (for ODE)</li>
+</ul>
+</li>
+<li>Numerical Analysis
+<ul>
+<li>Lagrange interpolation</li>
+<li>Splines
+<ul>
+<li>Cubic Spline</li>
+<li>Cubic Hermite Spline
+<ul>
+<li>Estimate slope via Akima</li>
+<li>Estimate slope via Quadratic interpolation</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Non-linear regression
+<ul>
+<li>Gradient Descent</li>
+<li>Levenberg Marquardt</li>
+</ul>
+</li>
+<li>Ordinary Differential Equation
+<ul>
+<li>Euler</li>
+<li>Runge Kutta 4th order</li>
+<li>Backward Euler (Implicit)</li>
+<li>Gauss Legendre 4th order (Implicit)</li>
+</ul>
+</li>
+<li>Numerical Integration
+<ul>
+<li>Newton-Cotes Quadrature</li>
+<li>Gauss-Legendre Quadrature (up to 30 order)</li>
+<li>Gauss-Kronrod Quadrature (Adaptive)
+<ul>
+<li>G7K15, G10K21, G15K31, G20K41, G25K51, G30K61</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Root Finding
+<ul>
+<li>Bisection</li>
+<li>False Position (Regula Falsi)</li>
+<li>Secant</li>
+<li>Newton</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>Statistics
+<ul>
+<li>More easy random with <code>rand</code> crate</li>
+<li>Ordered Statistics
+<ul>
+<li>Median</li>
+<li>Quantile (Matched with R quantile)</li>
+</ul>
+</li>
+<li>Probability Distributions
+<ul>
+<li>Bernoulli</li>
+<li>Uniform</li>
+<li>Binomial</li>
+<li>Normal</li>
+<li>Gamma</li>
+<li>Beta</li>
+<li>Student's-t</li>
+</ul>
+</li>
+<li>RNG algorithms
+<ul>
+<li>Acceptance Rejection</li>
+<li>Marsaglia Polar</li>
+<li>Ziggurat</li>
+<li>Wrapper for <code>rand-dist</code> crate</li>
+</ul>
+</li>
+<li>Confusion Matrix &amp; Metrics</li>
+</ul>
+</li>
+<li>Special functions
+<ul>
+<li>Wrapper for <code>puruspe</code> crate (pure rust)</li>
+</ul>
+</li>
+<li>Utils
+<ul>
+<li>R-like macro &amp; functions</li>
+<li>Matlab-like macro &amp; functions</li>
+<li>Numpy-like macro &amp; functions</li>
+<li>Julia-like macro &amp; functions</li>
+</ul>
+</li>
+<li>Plotting
+<ul>
+<li>With <code>pyo3</code> &amp; <code>matplotlib</code></li>
+</ul>
+</li>
+<li>DataFrame
+<ul>
+<li>Support various types simultaneously</li>
+<li>Read &amp; Write <code>csv</code> files (<code>csv</code> feature)</li>
+<li>Read &amp; Write <code>netcdf</code> files (<code>nc</code> feature)</li>
+<li>Read &amp; Write <code>parquet</code> files (<code>parquet</code> feature)</li>
+</ul>
+</li>
+</ul>
+<h3 id="6-compatible-with-mathematics">6. Compatible with Mathematics</h3>
+<p>After <code>0.23.0</code>, peroxide is compatible with mathematical structures.
+<code>Matrix</code>, <code>Vec&lt;f64&gt;</code>, <code>f64</code> are considered as inner product vector spaces.
+And <code>Matrix</code>, <code>Vec&lt;f64&gt;</code> are linear operators - <code>Vec&lt;f64&gt;</code> to <code>Vec&lt;f64&gt;</code> and <code>Vec&lt;f64&gt;</code> to <code>f64</code>.
+For future, peroxide will include more &amp; more mathematical concepts. (But still practical.)</p>
+<h3 id="7-written-in-rust">7. Written in Rust</h3>
+<p>Rust &amp; Cargo are awesome for scientific computations. 
+You can use any external packages easily with Cargo, not make.
+And default runtime performance of Rust is also great. If you use many iterations for computations,
+then Rust become great choice.</p>
+<h2 id="latest-readme-version">Latest README version</h2>
+<p>Corresponding to <code>0.32.0</code></p>
+<h2 id="pre-requisite">Pre-requisite</h2>
+<ul>
+<li>For <code>O3</code> feature - Need <code>OpenBLAS</code></li>
+<li>For <code>plot</code> feature - Need <code>matplotlib</code> of python</li>
+<li>For <code>nc</code> feature - Need <code>netcdf</code></li>
+</ul>
+<h2 id="install">Install</h2>
+<ul>
+<li>Run below commands in your project directory</li>
+</ul>
+<ol>
+<li>Default<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">cargo</span><span> add peroxide
+</span></code></pre>
+</li>
+<li>OpenBLAS<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">cargo</span><span> add peroxide</span><span style="color:#e45649;"> --features</span><span> O3
+</span></code></pre>
+</li>
+<li>Plot<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">cargo</span><span> add peroxide</span><span style="color:#e45649;"> --features</span><span> plot
+</span></code></pre>
+</li>
+<li>NetCDF dependency for DataFrame<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">cargo</span><span> add peroxide</span><span style="color:#e45649;"> --features</span><span> nc
+</span></code></pre>
+</li>
+<li>CSV dependency for DataFrame<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">cargo</span><span> add peroxide</span><span style="color:#e45649;"> --features</span><span> csv
+</span></code></pre>
+</li>
+<li>Parquet dependency for DataFrame<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">cargo</span><span> add peroxide</span><span style="color:#e45649;"> --features</span><span> parquet
+</span></code></pre>
+</li>
+<li>All features<pre data-lang="bash" style="background-color:#fafafa;color:#383a42;" class="language-bash "><code class="language-bash" data-lang="bash"><span style="color:#e45649;">cargo</span><span> add peroxide</span><span style="color:#e45649;"> --features </span><span style="color:#50a14f;">&quot;O3 plot nc csv parquet&quot;
+</span></code></pre>
+</li>
+</ol>
+<h2 id="useful-tips-for-features">Useful tips for features</h2>
+<ul>
+<li>If you want to use <em>QR</em> or <em>SVD</em> or <em>Cholesky Decomposition</em> then should use <code>O3</code> feature (there are no implementations for these decompositions in <code>default</code>)</li>
+<li>If you want to write your numerical results, then use <code>parquet</code> or <code>nc</code> features (corresponding to <code>parquet</code> or <code>netcdf</code> format. (It is much more effective than <code>csv</code> and <code>json</code>.)</li>
+<li>To plot, use <code>parquet</code> or <code>nc</code> feature to export data as parquet or netcdf format and use python to draw plot.
+<ul>
+<li><code>plot</code> feature has limited plot abilities.</li>
+<li>To read parquet file in python, use <code>pandas</code> &amp; <code>pyarrow</code> libraries.</li>
+<li>There is a template of python code for netcdf. - <a href="https://github.com/Axect/Socialst/blob/master/Templates/PyPlot_Template/nc_plot.py">Socialst</a></li>
+</ul>
+</li>
+</ul>
+<h2 id="documentation">Documentation</h2>
+<ul>
+<li><a href="https://peroxide.surge.sh"><img src="https://docs.rs/peroxide/badge.svg" alt="On docs.rs" /></a></li>
+</ul>
+<h2 id="example">Example</h2>
+<p><a href="https://github.com/Axect/Peroxide_Gallery">Peroxide Gallery</a></p>
+<h2 id="version-info">Version Info</h2>
+<p>To see <a href="https://github.com/Axect/Peroxide/blob/master/RELEASES.md">RELEASES.md</a></p>
+
+    </div>
+  </div>
+</div>
+
+  </div>
+  
+<script>
+  function show_bib(bib_path) {
+    $.ajax({
+      url: bib_path,
+      success: function (data) {
+        $("#bibtex-content").text(data);
+        $("#copyTarget").addClass("is-active");
+      },
+    });
+  }
+
+  document
+    .getElementById("copyButton")
+    .addEventListener("click", function () {
+      var copyText = document.getElementById("bibtex-content");
+      copyText.select();
+      copyText.setSelectionRange(0, 99999);
+      navigator.clipboard.writeText(copyText.value);
+      $("#copyTarget").removeClass("is-active");
+    });
+</script>
+
+  
+
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" integrity="sha384-+VBxd3r6XgURycqtZ117nYw44OOcIax56Z4dCRWbxyPt0Koah1uHoK0o4+/RRE05" crossorigin="anonymous"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        renderMathInElement(document.body, {
+          // customised options
+          // • auto-render specific keys, e.g.:
+          delimiters: [
+              {left: '$$', right: '$$', display: true},
+              {left: '$', right: '$', display: false},
+              {left: '\\(', right: '\\)', display: false},
+              {left: '\\[', right: '\\]', display: true}
+          ],
+          // • rendering keys, e.g.:
+          throwOnError : false
+        });
+    });
+</script>
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/dist/fullpage.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fullpage.js@3.1.2/vendors/scrolloverflow.min.js"></script>
+<script type="text/javascript">
+    var fullpages = new fullpage('#fullpage', {
+        menu: '#menu',
+        setRecordHistory: false,
+        anchors: [
+             'anchor_about',         
+             'anchor_skills',        
+             'anchor_projects',      
+            
+             'anchor_publications',  
+            
+             'anchor_education',     
+             'anchor_blog',          
+        ],
+        afterResize: function( width, height ){
+		    if (width < 936) {
+                fullpage_api.setAutoScrolling(false);
+            } else {
+                fullpage_api.setAutoScrolling(true);
+            }
+	    }
+    });
+    if (screen.width < 936){
+        fullpages.setAutoScrolling(false);
+    }
+
+</script>
+
+</body>
+
+</html>
