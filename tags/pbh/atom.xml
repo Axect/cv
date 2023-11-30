@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-    <title>Axect&#x27;s Blog - PBH</title>
-    <subtitle>Axect&#x27;s Blog</subtitle>
+    <title>Axect&#x27;s CV - PBH</title>
+    <subtitle>Axect&#x27;s CV</subtitle>
     <link href="https://axect.github.io/tags/pbh/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://axect.github.io"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
