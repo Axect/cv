@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Axect&#x27;s CV - Anomaly Detection</title>
     <subtitle>Axect&#x27;s CV</subtitle>
-    <link href="https://axect.github.io/tags/anomaly-detection/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://axect.github.io"/>
+    <link href="https://axect.github.io/cv/tags/anomaly-detection/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://axect.github.io/cv"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-05-16T00:00:00+00:00</updated>
-    <id>https://axect.github.io/tags/anomaly-detection/atom.xml</id>
+    <id>https://axect.github.io/cv/tags/anomaly-detection/atom.xml</id>
     <entry xml:lang="en">
         <title>Unsupervised seq2seq learning for automatic SQA introduces multi-channel EIT monitoring</title>
         <published>2023-05-16T00:00:00+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/publications/eit-anomaly-paper/" type="text/html"/>
-        <id>https://axect.github.io/publications/eit-anomaly-paper/</id>
+        <link rel="alternate" href="https://axect.github.io/cv/publications/eit-anomaly-paper/" type="text/html"/>
+        <id>https://axect.github.io/cv/publications/eit-anomaly-paper/</id>
         
         <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;

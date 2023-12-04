@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Axect&#x27;s CV - Machine Learning</title>
     <subtitle>Axect&#x27;s CV</subtitle>
-    <link href="https://axect.github.io/tags/machine-learning/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://axect.github.io"/>
+    <link href="https://axect.github.io/cv/tags/machine-learning/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://axect.github.io/cv"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-11-17T00:00:00+00:00</updated>
-    <id>https://axect.github.io/tags/machine-learning/atom.xml</id>
+    <id>https://axect.github.io/cv/tags/machine-learning/atom.xml</id>
     <entry xml:lang="en">
         <title>Forger</title>
         <published>2023-11-17T00:00:00+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/projects/forger/" type="text/html"/>
-        <id>https://axect.github.io/projects/forger/</id>
+        <link rel="alternate" href="https://axect.github.io/cv/projects/forger/" type="text/html"/>
+        <id>https://axect.github.io/cv/projects/forger/</id>
         
         <content type="html"></content>
         
@@ -27,8 +27,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/projects/deelema/" type="text/html"/>
-        <id>https://axect.github.io/projects/deelema/</id>
+        <link rel="alternate" href="https://axect.github.io/cv/projects/deelema/" type="text/html"/>
+        <id>https://axect.github.io/cv/projects/deelema/</id>
         
         <content type="html">&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
 &lt;p&gt;$\textsf{DeeLeMa}$ is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, $\textsf{DeeLeMa}$&#x27;s generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, $\textsf{DeeLeMa}$&#x27;s effectiveness shines when corresponding kinematic symmetries are adopted.&lt;&#x2F;p&gt;
@@ -66,14 +66,14 @@
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Install Dependencies&lt;&#x2F;strong&gt;: &lt;&#x2F;p&gt;
-&lt;p&gt;Follow the &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x2F;projects&#x2F;deelema&#x2F;#requirements&quot;&gt;Requirements&lt;&#x2F;a&gt; section for instructions.&lt;&#x2F;p&gt;
+&lt;p&gt;Follow the &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x2F;cv&#x2F;projects&#x2F;deelema&#x2F;#requirements&quot;&gt;Requirements&lt;&#x2F;a&gt; section for instructions.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
 &lt;p&gt;&lt;strong&gt;Training&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
 &lt;p&gt;⚠️ &lt;strong&gt;Caution&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Before training, ensure you modify the data path in &lt;code&gt;train.py&lt;&#x2F;code&gt; to point to the location of your data.
-For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x2F;projects&#x2F;deelema&#x2F;.&#x2F;train.py&quot;&gt;&lt;code&gt;train.py&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x2F;cv&#x2F;projects&#x2F;deelema&#x2F;.&#x2F;train.py&quot;&gt;&lt;code&gt;train.py&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;&#x2F;blockquote&gt;
 &lt;p&gt;To train the model, execute the following command:&lt;&#x2F;p&gt;
 &lt;pre data-lang=&quot;bash&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bash &quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span style=&quot;color:#e45649;&quot;&gt;python&lt;&#x2F;span&gt;&lt;span&gt; train.py
@@ -118,8 +118,8 @@ For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/projects/radient/" type="text/html"/>
-        <id>https://axect.github.io/projects/radient/</id>
+        <link rel="alternate" href="https://axect.github.io/cv/projects/radient/" type="text/html"/>
+        <id>https://axect.github.io/cv/projects/radient/</id>
         
         <content type="html"></content>
         
@@ -131,8 +131,8 @@ For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/publications/eit-anomaly-paper/" type="text/html"/>
-        <id>https://axect.github.io/publications/eit-anomaly-paper/</id>
+        <link rel="alternate" href="https://axect.github.io/cv/publications/eit-anomaly-paper/" type="text/html"/>
+        <id>https://axect.github.io/cv/publications/eit-anomaly-paper/</id>
         
         <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -175,8 +175,8 @@ For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/publications/deelema-paper/" type="text/html"/>
-        <id>https://axect.github.io/publications/deelema-paper/</id>
+        <link rel="alternate" href="https://axect.github.io/cv/publications/deelema-paper/" type="text/html"/>
+        <id>https://axect.github.io/cv/publications/deelema-paper/</id>
         
         <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;

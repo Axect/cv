@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 Allow: /
-Sitemap: https://axect.github.io/sitemap.xml
+Sitemap: https://axect.github.io/cv/sitemap.xml

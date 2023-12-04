@@ -2,11 +2,11 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Axect&#x27;s CV - PBH</title>
     <subtitle>Axect&#x27;s CV</subtitle>
-    <link href="https://axect.github.io/tags/pbh/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://axect.github.io"/>
+    <link href="https://axect.github.io/cv/tags/pbh/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://axect.github.io/cv"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2022-12-22T00:00:00+00:00</updated>
-    <id>https://axect.github.io/tags/pbh/atom.xml</id>
+    <id>https://axect.github.io/cv/tags/pbh/atom.xml</id>
     <entry xml:lang="en">
         <title>Axions from Primordial Black Hole</title>
         <published>2022-12-22T00:00:00+00:00</published>
@@ -14,8 +14,8 @@
         <author>
           <name>Unknown</name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/publications/pbh-alp-paper/" type="text/html"/>
-        <id>https://axect.github.io/publications/pbh-alp-paper/</id>
+        <link rel="alternate" href="https://axect.github.io/cv/publications/pbh-alp-paper/" type="text/html"/>
+        <id>https://axect.github.io/cv/publications/pbh-alp-paper/</id>
         
         <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;

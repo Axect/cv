@@ -1,97 +1,97 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-        <loc>https://axect.github.io/</loc>
+        <loc>https://axect.github.io/cv/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/articles/</loc>
+        <loc>https://axect.github.io/cv/articles/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/json/</loc>
+        <loc>https://axect.github.io/cv/json/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/projects/</loc>
+        <loc>https://axect.github.io/cv/projects/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/projects/deelema/</loc>
+        <loc>https://axect.github.io/cv/projects/deelema/</loc>
         <lastmod>2023-11-10</lastmod>
     </url>
     <url>
-        <loc>https://axect.github.io/projects/forger/</loc>
+        <loc>https://axect.github.io/cv/projects/forger/</loc>
         <lastmod>2023-11-17</lastmod>
     </url>
     <url>
-        <loc>https://axect.github.io/projects/peroxide/</loc>
+        <loc>https://axect.github.io/cv/projects/peroxide/</loc>
         <lastmod>2023-11-25</lastmod>
     </url>
     <url>
-        <loc>https://axect.github.io/projects/radient/</loc>
+        <loc>https://axect.github.io/cv/projects/radient/</loc>
         <lastmod>2023-11-09</lastmod>
     </url>
     <url>
-        <loc>https://axect.github.io/publications/</loc>
+        <loc>https://axect.github.io/cv/publications/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/publications/deelema-paper/</loc>
+        <loc>https://axect.github.io/cv/publications/deelema-paper/</loc>
         <lastmod>2022-12-25</lastmod>
     </url>
     <url>
-        <loc>https://axect.github.io/publications/eit-anomaly-paper/</loc>
+        <loc>https://axect.github.io/cv/publications/eit-anomaly-paper/</loc>
         <lastmod>2023-05-16</lastmod>
     </url>
     <url>
-        <loc>https://axect.github.io/publications/pbh-alp-paper/</loc>
+        <loc>https://axect.github.io/cv/publications/pbh-alp-paper/</loc>
         <lastmod>2022-12-22</lastmod>
     </url>
     <url>
-        <loc>https://axect.github.io/search/</loc>
+        <loc>https://axect.github.io/cv/search/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/</loc>
+        <loc>https://axect.github.io/cv/tags/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/alp/</loc>
+        <loc>https://axect.github.io/cv/tags/alp/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/anomaly-detection/</loc>
+        <loc>https://axect.github.io/cv/tags/anomaly-detection/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/automatic-differentiation/</loc>
+        <loc>https://axect.github.io/cv/tags/automatic-differentiation/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/dark-matter/</loc>
+        <loc>https://axect.github.io/cv/tags/dark-matter/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/linear-algebra/</loc>
+        <loc>https://axect.github.io/cv/tags/linear-algebra/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/machine-learning/</loc>
+        <loc>https://axect.github.io/cv/tags/machine-learning/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/medical/</loc>
+        <loc>https://axect.github.io/cv/tags/medical/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/numerical/</loc>
+        <loc>https://axect.github.io/cv/tags/numerical/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/pbh/</loc>
+        <loc>https://axect.github.io/cv/tags/pbh/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/physics/</loc>
+        <loc>https://axect.github.io/cv/tags/physics/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/pytorch/</loc>
+        <loc>https://axect.github.io/cv/tags/pytorch/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/reinforcement-learning/</loc>
+        <loc>https://axect.github.io/cv/tags/reinforcement-learning/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/rust/</loc>
+        <loc>https://axect.github.io/cv/tags/rust/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/statistics/</loc>
+        <loc>https://axect.github.io/cv/tags/statistics/</loc>
     </url>
     <url>
-        <loc>https://axect.github.io/tags/time-series/</loc>
+        <loc>https://axect.github.io/cv/tags/time-series/</loc>
     </url>
 </urlset>
