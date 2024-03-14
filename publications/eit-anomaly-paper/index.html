@@ -95,7 +95,7 @@
     
 <div class="container is-fluid" style="min-height: 100vh;">
   <div class="is-flex is-flex-direction-column is-justify-content-center" style="min-height: 100vh;">
-    <h2>Unsupervised seq2seq learning for automatic SQA introduces multi-channel EIT monitoring<a href="https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2305.09368" style="font-style: initial;" ><span class="tag is-warning">Link</span></a></h2>
+    <h2>Unsupervised seq2seq learning for automatic SQA introduces multi-channel EIT monitoring<a href="https:&#x2F;&#x2F;doi.org&#x2F;10.1016&#x2F;j.cmpb.2024.108079" style="font-style: initial;" ><span class="tag is-warning">Link</span></a></h2>
     
     <div class="content pb-5">
       <h2 id="authors">Authors</h2>
@@ -117,16 +117,21 @@
 <p>This study proposes an unsupervised sequence-to-sequence learning approach that automatically assesses the motion-induced reliability degradation of the cardiac volume signal (CVS) in multi-channel electrical impedance-based hemodynamic monitoring. The proposed method attempts to tackle shortcomings in existing learning-based assessment approaches, such as the requirement of manual annotation for motion influence and the lack of explicit mechanisms for realizing motion-induced abnormalities under contextual variations in CVS over time. By utilizing long-short term memory and variational auto-encoder structures, an encoder--decoder model is trained not only to self-reproduce an input sequence of the CVS but also to extrapolate the future in a parallel fashion. By doing so, the model can capture contextual knowledge lying in a temporal CVS sequence while being regularized to explore a general relationship over the entire time-series. A motion-influenced CVS of low-quality is detected, based on the residual between the input sequence and its neural representation with a cut--off value determined from the two-sigma rule of thumb over the training set. Our experimental observations validated two claims: (i) in the learning environment of label-absence, assessment performance is achievable at a competitive level to the supervised setting, and (ii) the contextual information across a time series of CVS is advantageous for effectively realizing motion-induced unrealistic distortions in signal amplitude and morphology. We also investigated the capability as a pseudo-labeling tool to minimize human-craft annotation by preemptively providing strong candidates for motion-induced anomalies. Empirical evidence has shown that machine-guided annotation can reduce inevitable human-errors during manual assessment while minimizing cumbersome and time-consuming processes.</p>
 <h2 id="important-links">Important links</h2>
 <ul>
+<li><a href="https://doi.org/10.1016/j.cmpb.2024.108079">CMPB 108079</a></li>
 <li><a href="https://arxiv.org/abs/2305.09368">ArXiv: 2305.09368</a></li>
 </ul>
 <h2 id="citation">Citation</h2>
-<pre data-lang="bib" style="background-color:#fafafa;color:#383a42;" class="language-bib "><code class="language-bib" data-lang="bib"><span style="color:#a626a4;">@misc</span><span>{hyun2023unsupervised,
-</span><span>      </span><span style="color:#50a14f;">title</span><span>=</span><span style="color:#50a14f;">{Unsupervised sequence-to-sequence learning for automatic signal quality assessment in multi-channel electrical impedance-based hemodynamic monitoring}</span><span>, 
-</span><span>      </span><span style="color:#50a14f;">author</span><span>=</span><span style="color:#50a14f;">{Chang Min Hyun and Tae-Geun Kim and Kyounghun Lee}</span><span>,
-</span><span>      </span><span style="color:#50a14f;">year</span><span>=</span><span style="color:#50a14f;">{2023}</span><span>,
-</span><span>      </span><span style="color:#50a14f;">eprint</span><span>=</span><span style="color:#50a14f;">{2305.09368}</span><span>,
-</span><span>      </span><span style="color:#50a14f;">archivePrefix</span><span>=</span><span style="color:#50a14f;">{arXiv}</span><span>,
-</span><span>      </span><span style="color:#50a14f;">primaryClass</span><span>=</span><span style="color:#50a14f;">{eess.SP}
+<pre data-lang="bib" style="background-color:#fafafa;color:#383a42;" class="language-bib "><code class="language-bib" data-lang="bib"><span style="color:#a626a4;">@article</span><span>{HYUN2024108079,
+</span><span>  </span><span style="color:#50a14f;">title         </span><span>= </span><span style="color:#50a14f;">{Unsupervised sequence-to-sequence learning for automatic signal quality assessment in multi-channel electrical impedance-based hemodynamic monitoring}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">journal       </span><span>= </span><span style="color:#50a14f;">{Computer Methods and Programs in Biomedicine}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">volume        </span><span>= </span><span style="color:#50a14f;">{247}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">pages         </span><span>= </span><span style="color:#50a14f;">{108079}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">year          </span><span>= </span><span style="color:#50a14f;">{2024}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">issn          </span><span>= </span><span style="color:#50a14f;">{0169-2607}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">doi           </span><span>= </span><span style="color:#50a14f;">{https://doi.org/10.1016/j.cmpb.2024.108079}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">url           </span><span>= </span><span style="color:#50a14f;">{https://www.sciencedirect.com/science/article/pii/S0169260724000750}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">author        </span><span>= </span><span style="color:#50a14f;">{Chang Min Hyun and Tae-Geun Kim and Kyounghun Lee}</span><span>,
+</span><span>  </span><span style="color:#50a14f;">keywords      </span><span>= </span><span style="color:#50a14f;">{Cardiopulmonary monitoring, Electrical impedance, Signal quality assessment, Time-series anomaly detection, Unsupervised learning, Recurrent neural network, Variational auto-encoder}
 </span><span>}
 </span></code></pre>
 

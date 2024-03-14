@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Axect&#x27;s CV - Medical</title>
     <subtitle>Axect&#x27;s CV</subtitle>
-    <link href="https://axect.github.io/cv/tags/medical/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://axect.github.io/cv"/>
+    <link rel="self" type="application/atom+xml" href="https://axect.github.io/cv/tags/medical/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://axect.github.io/cv"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-05-16T00:00:00+00:00</updated>
     <id>https://axect.github.io/cv/tags/medical/atom.xml</id>
@@ -11,13 +11,19 @@
         <title>Unsupervised seq2seq learning for automatic SQA introduces multi-channel EIT monitoring</title>
         <published>2023-05-16T00:00:00+00:00</published>
         <updated>2023-05-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/publications/eit-anomaly-paper/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/publications/eit-anomaly-paper/"/>
         <id>https://axect.github.io/cv/publications/eit-anomaly-paper/</id>
         
-        <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://axect.github.io/cv/publications/eit-anomaly-paper/">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;First authors
 &lt;ul&gt;
@@ -36,16 +42,21 @@
 &lt;p&gt;This study proposes an unsupervised sequence-to-sequence learning approach that automatically assesses the motion-induced reliability degradation of the cardiac volume signal (CVS) in multi-channel electrical impedance-based hemodynamic monitoring. The proposed method attempts to tackle shortcomings in existing learning-based assessment approaches, such as the requirement of manual annotation for motion influence and the lack of explicit mechanisms for realizing motion-induced abnormalities under contextual variations in CVS over time. By utilizing long-short term memory and variational auto-encoder structures, an encoder--decoder model is trained not only to self-reproduce an input sequence of the CVS but also to extrapolate the future in a parallel fashion. By doing so, the model can capture contextual knowledge lying in a temporal CVS sequence while being regularized to explore a general relationship over the entire time-series. A motion-influenced CVS of low-quality is detected, based on the residual between the input sequence and its neural representation with a cut--off value determined from the two-sigma rule of thumb over the training set. Our experimental observations validated two claims: (i) in the learning environment of label-absence, assessment performance is achievable at a competitive level to the supervised setting, and (ii) the contextual information across a time series of CVS is advantageous for effectively realizing motion-induced unrealistic distortions in signal amplitude and morphology. We also investigated the capability as a pseudo-labeling tool to minimize human-craft annotation by preemptively providing strong candidates for motion-induced anomalies. Empirical evidence has shown that machine-guided annotation can reduce inevitable human-errors during manual assessment while minimizing cumbersome and time-consuming processes.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;important-links&quot;&gt;Important links&lt;&#x2F;h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;doi.org&#x2F;10.1016&#x2F;j.cmpb.2024.108079&quot;&gt;CMPB 108079&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2305.09368&quot;&gt;ArXiv: 2305.09368&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;citation&quot;&gt;Citation&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@misc&lt;&#x2F;span&gt;&lt;span&gt;{hyun2023unsupervised,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Unsupervised sequence-to-sequence learning for automatic signal quality assessment in multi-channel electrical impedance-based hemodynamic monitoring}&lt;&#x2F;span&gt;&lt;span&gt;, 
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Chang Min Hyun and Tae-Geun Kim and Kyounghun Lee}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2023}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;eprint&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2305.09368}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;archivePrefix&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{arXiv}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;primaryClass&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{eess.SP}
+&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@article&lt;&#x2F;span&gt;&lt;span&gt;{HYUN2024108079,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title         &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Unsupervised sequence-to-sequence learning for automatic signal quality assessment in multi-channel electrical impedance-based hemodynamic monitoring}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;journal       &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Computer Methods and Programs in Biomedicine}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;volume        &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{247}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;pages         &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{108079}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year          &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2024}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;issn          &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{0169-2607}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;doi           &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{https:&#x2F;&#x2F;doi.org&#x2F;10.1016&#x2F;j.cmpb.2024.108079}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;url           &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{https:&#x2F;&#x2F;www.sciencedirect.com&#x2F;science&#x2F;article&#x2F;pii&#x2F;S0169260724000750}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author        &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Chang Min Hyun and Tae-Geun Kim and Kyounghun Lee}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;keywords      &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Cardiopulmonary monitoring, Electrical impedance, Signal quality assessment, Time-series anomaly detection, Unsupervised learning, Recurrent neural network, Variational auto-encoder}
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>

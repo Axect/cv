@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Axect&#x27;s CV - Linear Algebra</title>
     <subtitle>Axect&#x27;s CV</subtitle>
-    <link href="https://axect.github.io/cv/tags/linear-algebra/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://axect.github.io/cv"/>
+    <link rel="self" type="application/atom+xml" href="https://axect.github.io/cv/tags/linear-algebra/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://axect.github.io/cv"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-11-25T00:00:00+00:00</updated>
     <id>https://axect.github.io/cv/tags/linear-algebra/atom.xml</id>
@@ -11,13 +11,19 @@
         <title>Peroxide</title>
         <published>2023-11-25T00:00:00+00:00</published>
         <updated>2023-11-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/projects/peroxide/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/projects/peroxide/"/>
         <id>https://axect.github.io/cv/projects/peroxide/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;peroxide&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;crates&#x2F;v&#x2F;peroxide.svg&quot; alt=&quot;On crates.io&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+        <content type="html" xml:base="https://axect.github.io/cv/projects/peroxide/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;peroxide&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;crates&#x2F;v&#x2F;peroxide.svg&quot; alt=&quot;On crates.io&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;peroxide.surge.sh&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;peroxide&#x2F;badge.svg&quot; alt=&quot;On docs.rs&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml?&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml.svg&quot; alt=&quot;builds.sr.ht status&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;img src=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide&#x2F;workflows&#x2F;Github&#x2F;badge.svg&quot; alt=&quot;github&quot; &#x2F;&gt; 

@@ -2,8 +2,8 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
     <title>Axect&#x27;s CV</title>
     <subtitle>Axect&#x27;s CV</subtitle>
-    <link href="https://axect.github.io/cv/atom.xml" rel="self" type="application/atom+xml"/>
-    <link href="https://axect.github.io/cv"/>
+    <link rel="self" type="application/atom+xml" href="https://axect.github.io/cv/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://axect.github.io/cv"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
     <updated>2023-11-25T00:00:00+00:00</updated>
     <id>https://axect.github.io/cv/atom.xml</id>
@@ -11,13 +11,19 @@
         <title>Peroxide</title>
         <published>2023-11-25T00:00:00+00:00</published>
         <updated>2023-11-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/projects/peroxide/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/projects/peroxide/"/>
         <id>https://axect.github.io/cv/projects/peroxide/</id>
         
-        <content type="html">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;peroxide&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;crates&#x2F;v&#x2F;peroxide.svg&quot; alt=&quot;On crates.io&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
+        <content type="html" xml:base="https://axect.github.io/cv/projects/peroxide/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;peroxide&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;crates&#x2F;v&#x2F;peroxide.svg&quot; alt=&quot;On crates.io&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;peroxide.surge.sh&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;peroxide&#x2F;badge.svg&quot; alt=&quot;On docs.rs&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml?&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml.svg&quot; alt=&quot;builds.sr.ht status&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;img src=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide&#x2F;workflows&#x2F;Github&#x2F;badge.svg&quot; alt=&quot;github&quot; &#x2F;&gt; 
@@ -328,26 +334,38 @@ then Rust become great choice.&lt;&#x2F;p&gt;
         <title>Forger</title>
         <published>2023-11-17T00:00:00+00:00</published>
         <updated>2023-11-17T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/projects/forger/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/projects/forger/"/>
         <id>https://axect.github.io/cv/projects/forger/</id>
         
-        <content type="html"></content>
+        <content type="html" xml:base="https://axect.github.io/cv/projects/forger/"></content>
         
     </entry>
     <entry xml:lang="en">
         <title>DeeLeMa</title>
         <published>2023-11-10T00:00:00+00:00</published>
         <updated>2023-11-10T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/projects/deelema/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/projects/deelema/"/>
         <id>https://axect.github.io/cv/projects/deelema/</id>
         
-        <content type="html">&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://axect.github.io/cv/projects/deelema/">&lt;h2 id=&quot;overview&quot;&gt;Overview&lt;&#x2F;h2&gt;
 &lt;p&gt;$\textsf{DeeLeMa}$ is a deep learning network designed to analyze energies and momenta in particle collisions at high-energy colliders. Built with a foundation on symmetric event topology, $\textsf{DeeLeMa}$&#x27;s generated mass distributions demonstrate robust peaks at the physical masses, even after accounting for combinatoric uncertainties and detector smearing effects. With its adaptability to different event topologies, $\textsf{DeeLeMa}$&#x27;s effectiveness shines when corresponding kinematic symmetries are adopted.&lt;&#x2F;p&gt;
 &lt;p&gt;The current version of $\textsf{DeeLeMa}$ (v1.0.0) is constructed on the $t\bar{t}$-like antler event topology which is shown below figure.&lt;&#x2F;p&gt;
 &lt;p align=&quot;center&quot;&gt;
@@ -432,26 +450,38 @@ For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x
         <title>Radient</title>
         <published>2023-11-09T00:00:00+00:00</published>
         <updated>2023-11-09T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/projects/radient/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/projects/radient/"/>
         <id>https://axect.github.io/cv/projects/radient/</id>
         
-        <content type="html"></content>
+        <content type="html" xml:base="https://axect.github.io/cv/projects/radient/"></content>
         
     </entry>
     <entry xml:lang="en">
         <title>Unsupervised seq2seq learning for automatic SQA introduces multi-channel EIT monitoring</title>
         <published>2023-05-16T00:00:00+00:00</published>
         <updated>2023-05-16T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/publications/eit-anomaly-paper/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/publications/eit-anomaly-paper/"/>
         <id>https://axect.github.io/cv/publications/eit-anomaly-paper/</id>
         
-        <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://axect.github.io/cv/publications/eit-anomaly-paper/">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;First authors
 &lt;ul&gt;
@@ -470,16 +500,21 @@ For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x
 &lt;p&gt;This study proposes an unsupervised sequence-to-sequence learning approach that automatically assesses the motion-induced reliability degradation of the cardiac volume signal (CVS) in multi-channel electrical impedance-based hemodynamic monitoring. The proposed method attempts to tackle shortcomings in existing learning-based assessment approaches, such as the requirement of manual annotation for motion influence and the lack of explicit mechanisms for realizing motion-induced abnormalities under contextual variations in CVS over time. By utilizing long-short term memory and variational auto-encoder structures, an encoder--decoder model is trained not only to self-reproduce an input sequence of the CVS but also to extrapolate the future in a parallel fashion. By doing so, the model can capture contextual knowledge lying in a temporal CVS sequence while being regularized to explore a general relationship over the entire time-series. A motion-influenced CVS of low-quality is detected, based on the residual between the input sequence and its neural representation with a cut--off value determined from the two-sigma rule of thumb over the training set. Our experimental observations validated two claims: (i) in the learning environment of label-absence, assessment performance is achievable at a competitive level to the supervised setting, and (ii) the contextual information across a time series of CVS is advantageous for effectively realizing motion-induced unrealistic distortions in signal amplitude and morphology. We also investigated the capability as a pseudo-labeling tool to minimize human-craft annotation by preemptively providing strong candidates for motion-induced anomalies. Empirical evidence has shown that machine-guided annotation can reduce inevitable human-errors during manual assessment while minimizing cumbersome and time-consuming processes.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;important-links&quot;&gt;Important links&lt;&#x2F;h2&gt;
 &lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;doi.org&#x2F;10.1016&#x2F;j.cmpb.2024.108079&quot;&gt;CMPB 108079&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2305.09368&quot;&gt;ArXiv: 2305.09368&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;citation&quot;&gt;Citation&lt;&#x2F;h2&gt;
-&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@misc&lt;&#x2F;span&gt;&lt;span&gt;{hyun2023unsupervised,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Unsupervised sequence-to-sequence learning for automatic signal quality assessment in multi-channel electrical impedance-based hemodynamic monitoring}&lt;&#x2F;span&gt;&lt;span&gt;, 
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Chang Min Hyun and Tae-Geun Kim and Kyounghun Lee}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2023}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;eprint&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2305.09368}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;archivePrefix&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{arXiv}&lt;&#x2F;span&gt;&lt;span&gt;,
-&lt;&#x2F;span&gt;&lt;span&gt;      &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;primaryClass&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{eess.SP}
+&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@article&lt;&#x2F;span&gt;&lt;span&gt;{HYUN2024108079,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title         &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Unsupervised sequence-to-sequence learning for automatic signal quality assessment in multi-channel electrical impedance-based hemodynamic monitoring}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;journal       &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Computer Methods and Programs in Biomedicine}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;volume        &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{247}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;pages         &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{108079}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year          &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2024}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;issn          &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{0169-2607}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;doi           &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{https:&#x2F;&#x2F;doi.org&#x2F;10.1016&#x2F;j.cmpb.2024.108079}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;url           &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{https:&#x2F;&#x2F;www.sciencedirect.com&#x2F;science&#x2F;article&#x2F;pii&#x2F;S0169260724000750}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author        &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Chang Min Hyun and Tae-Geun Kim and Kyounghun Lee}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;  &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;keywords      &lt;&#x2F;span&gt;&lt;span&gt;= &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Cardiopulmonary monitoring, Electrical impedance, Signal quality assessment, Time-series anomaly detection, Unsupervised learning, Recurrent neural network, Variational auto-encoder}
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 </content>
@@ -489,13 +524,19 @@ For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x
         <title>Missing information search with deep learning for mass estimation</title>
         <published>2022-12-25T00:00:00+00:00</published>
         <updated>2022-12-25T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/publications/deelema-paper/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/publications/deelema-paper/"/>
         <id>https://axect.github.io/cv/publications/deelema-paper/</id>
         
-        <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://axect.github.io/cv/publications/deelema-paper/">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;First authors
 &lt;ul&gt;
@@ -538,13 +579,19 @@ For more details, refer to &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x
         <title>Axions from Primordial Black Hole</title>
         <published>2022-12-22T00:00:00+00:00</published>
         <updated>2022-12-22T00:00:00+00:00</updated>
+        
         <author>
-          <name>Unknown</name>
+          <name>
+            
+              Unknown
+            
+          </name>
         </author>
-        <link rel="alternate" href="https://axect.github.io/cv/publications/pbh-alp-paper/" type="text/html"/>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/publications/pbh-alp-paper/"/>
         <id>https://axect.github.io/cv/publications/pbh-alp-paper/</id>
         
-        <content type="html">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+        <content type="html" xml:base="https://axect.github.io/cv/publications/pbh-alp-paper/">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;First authors
 &lt;ul&gt;
