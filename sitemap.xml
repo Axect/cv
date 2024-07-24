@@ -40,6 +40,10 @@
         <lastmod>2023-05-16</lastmod>
     </url>
     <url>
+        <loc>https://axect.github.io/cv/publications/hyperboliclr-paper/</loc>
+        <lastmod>2024-07-21</lastmod>
+    </url>
+    <url>
         <loc>https://axect.github.io/cv/publications/pbh-alp-paper/</loc>
         <lastmod>2022-12-22</lastmod>
     </url>
@@ -62,6 +66,12 @@
         <loc>https://axect.github.io/cv/tags/dark-matter/</loc>
     </url>
     <url>
+        <loc>https://axect.github.io/cv/tags/deep-learning/</loc>
+    </url>
+    <url>
+        <loc>https://axect.github.io/cv/tags/learning-rate-scheduler/</loc>
+    </url>
+    <url>
         <loc>https://axect.github.io/cv/tags/linear-algebra/</loc>
     </url>
     <url>
@@ -72,6 +82,9 @@
     </url>
     <url>
         <loc>https://axect.github.io/cv/tags/numerical/</loc>
+    </url>
+    <url>
+        <loc>https://axect.github.io/cv/tags/optimization/</loc>
     </url>
     <url>
         <loc>https://axect.github.io/cv/tags/pbh/</loc>

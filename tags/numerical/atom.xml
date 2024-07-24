@@ -26,7 +26,7 @@
         <content type="html" xml:base="https://axect.github.io/cv/projects/peroxide/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;crates.io&#x2F;crates&#x2F;peroxide&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;crates&#x2F;v&#x2F;peroxide.svg&quot; alt=&quot;On crates.io&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;peroxide.surge.sh&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;peroxide&#x2F;badge.svg&quot; alt=&quot;On docs.rs&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml?&quot;&gt;&lt;img src=&quot;https:&#x2F;&#x2F;builds.sr.ht&#x2F;~axect&#x2F;Peroxide&#x2F;.build.yml.svg&quot; alt=&quot;builds.sr.ht status&quot; &#x2F;&gt;&lt;&#x2F;a&gt;
-&lt;img src=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide&#x2F;workflows&#x2F;Github&#x2F;badge.svg&quot; alt=&quot;github&quot; &#x2F;&gt; 
+&lt;img src=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;Peroxide&#x2F;workflows&#x2F;Github&#x2F;badge.svg&quot; alt=&quot;github&quot; &#x2F;&gt;
 &lt;img src=&quot;https:&#x2F;&#x2F;img.shields.io&#x2F;badge&#x2F;maintenance-actively--developed-brightgreen.svg&quot; alt=&quot;maintenance&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
 &lt;p&gt;Rust numeric library contains linear algebra, numerical analysis, statistics and machine learning tools with R, MATLAB, Python like macros.&lt;&#x2F;p&gt;
 &lt;h2 id=&quot;why-peroxide&quot;&gt;Why Peroxide?&lt;&#x2F;h2&gt;
@@ -121,7 +121,7 @@ With peroxide, you can do heavy computations with R, Numpy, MATLAB like syntax.&
 &lt;&#x2F;span&gt;&lt;span&gt;}
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;h3 id=&quot;5-batteries-included&quot;&gt;5. Batteries included&lt;&#x2F;h3&gt;
-&lt;p&gt;Peroxide can do many things. &lt;&#x2F;p&gt;
+&lt;p&gt;Peroxide can do many things.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;Linear Algebra
 &lt;ul&gt;
@@ -268,7 +268,7 @@ With peroxide, you can do heavy computations with R, Numpy, MATLAB like syntax.&
 And &lt;code&gt;Matrix&lt;&#x2F;code&gt;, &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; are linear operators - &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; to &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; and &lt;code&gt;Vec&amp;lt;f64&amp;gt;&lt;&#x2F;code&gt; to &lt;code&gt;f64&lt;&#x2F;code&gt;.
 For future, peroxide will include more &amp;amp; more mathematical concepts. (But still practical.)&lt;&#x2F;p&gt;
 &lt;h3 id=&quot;7-written-in-rust&quot;&gt;7. Written in Rust&lt;&#x2F;h3&gt;
-&lt;p&gt;Rust &amp;amp; Cargo are awesome for scientific computations. 
+&lt;p&gt;Rust &amp;amp; Cargo are awesome for scientific computations.
 You can use any external packages easily with Cargo, not make.
 And default runtime performance of Rust is also great. If you use many iterations for computations,
 then Rust become great choice.&lt;&#x2F;p&gt;

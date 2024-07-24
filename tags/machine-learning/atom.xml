@@ -5,8 +5,48 @@
     <link rel="self" type="application/atom+xml" href="https://axect.github.io/cv/tags/machine-learning/atom.xml"/>
     <link rel="alternate" type="text/html" href="https://axect.github.io/cv"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-11-17T00:00:00+00:00</updated>
+    <updated>2024-07-21T00:00:00+00:00</updated>
     <id>https://axect.github.io/cv/tags/machine-learning/atom.xml</id>
+    <entry xml:lang="en">
+        <title>HyperbolicLR: Epoch insensitive learning rate scheduler</title>
+        <published>2024-07-21T00:00:00+00:00</published>
+        <updated>2024-07-21T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://axect.github.io/cv/publications/hyperboliclr-paper/"/>
+        <id>https://axect.github.io/cv/publications/hyperboliclr-paper/</id>
+        
+        <content type="html" xml:base="https://axect.github.io/cv/publications/hyperboliclr-paper/">&lt;h2 id=&quot;authors&quot;&gt;Authors&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&quot;&gt;&lt;strong&gt;Tae-Geun Kim&lt;&#x2F;strong&gt;&lt;&#x2F;a&gt; (Yonsei University, South Korea)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;abstract&quot;&gt;Abstract&lt;&#x2F;h2&gt;
+&lt;p&gt;This study proposes two novel learning rate schedulers: the Hyperbolic Learning Rate Scheduler (HyperbolicLR) and the Exponential Hyperbolic Learning Rate Scheduler (ExpHyperbolicLR). These schedulers attempt to address the inconsistent learning curves often observed in conventional schedulers when adjusting the number of epochs. By leveraging the asymptotic behavior of hyperbolic curves, the proposed schedulers maintain more consistent learning curves across varying epoch settings. Experimental results on various deep learning tasks and architectures demonstrate that both HyperbolicLR and ExpHyperbolicLR maintain more consistent performance improvements compared to conventional schedulers as the number of epochs increases. These findings suggest that our hyperbolic-based learning rate schedulers offer a more robust and efficient approach to training deep neural networks, especially in scenarios where computational resources or time constraints limit extensive hyperparameter searches.&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;important-links&quot;&gt;Important links&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;Axect&#x2F;HyperbolicLR&quot;&gt;GitHub: HyperbolicLR&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;citation&quot;&gt;Citation&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;bib&quot; style=&quot;background-color:#fafafa;color:#383a42;&quot; class=&quot;language-bib &quot;&gt;&lt;code class=&quot;language-bib&quot; data-lang=&quot;bib&quot;&gt;&lt;span style=&quot;color:#a626a4;&quot;&gt;@misc&lt;&#x2F;span&gt;&lt;span&gt;{kim2024hyperboliclr,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;title&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{HyperbolicLR: Epoch insensitive learning rate scheduler}&lt;&#x2F;span&gt;&lt;span&gt;, 
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;author&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{Tae-Geun Kim}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;year&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2024}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;eprint&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{2407.15200}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;archivePrefix&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{arXiv}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;primaryClass&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{cs.LG}&lt;&#x2F;span&gt;&lt;span&gt;,
+&lt;&#x2F;span&gt;&lt;span&gt;    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;url&lt;&#x2F;span&gt;&lt;span&gt;=&lt;&#x2F;span&gt;&lt;span style=&quot;color:#50a14f;&quot;&gt;{https:&#x2F;&#x2F;arxiv.org&#x2F;abs&#x2F;2407.15200}&lt;&#x2F;span&gt;&lt;span&gt;, 
+&lt;&#x2F;span&gt;&lt;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>Forger</title>
         <published>2023-11-17T00:00:00+00:00</published>
@@ -77,7 +117,7 @@
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
-&lt;p&gt;&lt;strong&gt;Install Dependencies&lt;&#x2F;strong&gt;: &lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;Install Dependencies&lt;&#x2F;strong&gt;:&lt;&#x2F;p&gt;
 &lt;p&gt;Follow the &lt;a href=&quot;https:&#x2F;&#x2F;axect.github.io&#x2F;cv&#x2F;projects&#x2F;deelema&#x2F;#requirements&quot;&gt;Requirements&lt;&#x2F;a&gt; section for instructions.&lt;&#x2F;p&gt;
 &lt;&#x2F;li&gt;
 &lt;li&gt;
